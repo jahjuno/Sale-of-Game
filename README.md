@@ -1,2 +1,2 @@
-# Vente-de-jeux-online
-Projet(Cours HTML_CSS_JS)
+#GALSTORE
+Galstore est un site de vente de jeux en ligne. Sur ce site, vous pouvez acheté des jeux en un clique seulement.
