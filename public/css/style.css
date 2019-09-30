@@ -1,0 +1,39 @@
+.nav-link{
+        font-weight: normal !important;
+}
+
+.lanidng-page{
+        background-image: url("../images/back.jpg");
+        background-repeat: unset;
+        background-size: cover ;
+        height: 700px;
+}
+
+.fa-trash{
+        color: rgb(207, 15, 15) !important;
+}
+.fa-trash:hover{
+        color:#fff !important;
+}
+.fa-shopping-cart{
+        color: #2ebc4f !important;
+}
+.fa-shopping-cart:hover{
+        color: #fff !important;
+}
+.btn-outline-danger{
+        padding-right: 12px;
+        padding-left: 12px;
+}
+.btn-outline-danger:hover{
+        color: #fff !important;
+}
+.btn-outline-success{
+        padding-right: 11px;
+        padding-left: 11px;
+}
+.btn-outline-success:hover{
+        color: #fff !important;
+}
+
+
