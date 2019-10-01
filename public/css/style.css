@@ -25,26 +25,20 @@
         color:#1da1f2 !important;
 }
 .btn-outline-danger{
-        padding-right: 12px;
-        padding-left: 12px;
+        padding-right: 12px !important;
+        padding-left: 12px !important;
 }
 .btn-outline-danger:hover{
         color: #fff !important;
 }
 .btn-outline-success{
-        padding-right: 11px;
-        padding-left: 11px;
+        padding-right: 11px !important;
+        padding-left: 11px !important;
 }
 .btn-outline-success:hover{
         color: #fff !important;
 }
-.play{
-        padding-right: 11px;
-        padding-left: 12px;
-}
-.play:hover{
-        color:#fff !important;
-}
+
 .fa-play:hover{
         color:#fff !important;
 }
@@ -52,7 +46,13 @@
 .description{
         width: 100% !important;
 }
+<<<<<<< HEAD
 acheter{
         color: #fff !important;
 }
 
+=======
+.compte{
+        color: black !important; 
+}
+>>>>>>> 7673404e23a3957d06576e545ba8c3a7c11ff1fb
