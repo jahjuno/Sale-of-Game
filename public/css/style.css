@@ -21,6 +21,9 @@
 .fa-shopping-cart:hover{
         color: #fff !important;
 }
+.fa-play{
+        color:#1da1f2 !important;
+}
 .btn-outline-danger{
         padding-right: 12px;
         padding-left: 12px;
@@ -34,6 +37,16 @@
 }
 .btn-outline-success:hover{
         color: #fff !important;
+}
+.play{
+        padding-right: 11px;
+        padding-left: 12px;
+}
+.play:hover{
+        color:#fff !important;
+}
+.fa-play:hover{
+        color:#fff !important;
 }
 
 
