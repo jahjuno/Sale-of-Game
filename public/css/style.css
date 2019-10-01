@@ -16,7 +16,7 @@
         color:#fff !important;
 }
 .fa-shopping-cart{
-        color: #2ebc4f !important;
+        color: #2ebc4f ;
 }
 .fa-shopping-cart:hover{
         color: #fff !important;
@@ -52,5 +52,7 @@
 .description{
         width: 100% !important;
 }
-
+acheter{
+        color: #fff !important;
+}
 
