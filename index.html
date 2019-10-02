@@ -24,9 +24,9 @@
             <div
                 class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#accueil"><i class="fa fa-bars"></i> Sommaire</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#projets"><i class="fa fa-pencil"></i> S'inscrire</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#cv"><i class="fa fa-sign-in"></i> Se connecter</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-bars"></i> Sommaire</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#inscrire" data-toggle="modal"><i class="fa fa-pencil"></i> S'inscrire</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#connecter" data-toggle="modal"><i class="fa fa-sign-in"></i> Se connecter</a></li>
                 </ul>
         </div>
         </div>
@@ -235,6 +235,70 @@
                             <a class="btn btn-outline-danger"  role="button" href="#"><i class="fa fa-trash"></i></a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="connecter" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: bold;">Se connecter</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form id="connecter">
+                        <div class="form-group">
+                            <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="email" placeholder="Email" required="required">
+
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="password" placeholder="Mot de passe" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" onclick="verifie_password()" name="valider_se_connecter"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="Se connecter">
+                            <label style="color:red;font-size:11;text-align: center"></label>
+                        </div>
+                    </form>
+                    <p class="hint-text small"><a href="#" OnClick="window.location='index.php?action=mot_de_passe_oubliee'">Mot de passe oublié?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="inscrire" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: bold;">S'inscrire</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form  action="index.php?action=inscription" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="nom" placeholder="Nom" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="prenom" placeholder="Prénom" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="mail" placeholder="Email" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="password" placeholder="Mot de passe" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="confirmation_password" placeholder="Confirmer le mot de passe" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit"  onclick="inscription()" name="valider_inscription"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="S'inscrire">
+                        </div>
+                        <script type="text/javascript" src="public/js/verification_form1.js"></script>
+                    </form>
                 </div>
             </div>
         </div>
