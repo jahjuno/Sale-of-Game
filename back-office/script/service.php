@@ -7,6 +7,12 @@ if (isset($_POST['inscription'])){
     $prenom = $_POST['prenom'];
     $mail = $_POST['mail'];
     $password = $_POST['password'];
+
+    $query = new Query_bdd();
+    echo $query->inscription($nom, $prenom, $mail, $password);
+
+
+
 }
 
 ?>
