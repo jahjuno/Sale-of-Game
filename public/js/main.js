@@ -56,6 +56,11 @@ function sInscrire(nom, prenom, mail, password){
   );
 
   function feed_back(response){
-  
+      if (response == 1){
+          alert('ok');
+      }
+      else{
+        $("#inscrire p[name=erreur]").text(response);
+      }
   }
 }

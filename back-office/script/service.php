@@ -9,9 +9,9 @@ if (isset($_POST['inscription'])){
     $password = $_POST['password'];
 
     $query = new Query_bdd();
-    $ret = $query->inscription($nom, $prenom, $mail, $password);
+    echo $query->inscription($nom, $prenom, $mail, $password);
 
-    echo $ret;
+
 
 }
 
