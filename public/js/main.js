@@ -16,15 +16,7 @@ function inscription(){
         {
           if (pass1.val() === pass2.val()) // verifiena oe mitovy le mot de passe nosoratana
           {
-                var res = sInscrire(nom.val(), prenom.val(), mail.val(), pass1.val());
-
-                if (res === true){
-                  alert("Hello World");
-                    // atao akato ny traitement maro be ka
-                }
-                else{
-                  error.text(res);
-                }
+              sInscrire(nom.val(), prenom.val(), mail.val(), pass1.val());
           }
           else{
             error.text("Le mot de passe ne correspond pas"); // mampiseho text d erreur
@@ -64,6 +56,6 @@ function sInscrire(nom, prenom, mail, password){
   );
 
   function feed_back(response){
-    alert(response);
+  
   }
 }
