@@ -7,8 +7,7 @@
     <title>G-Store | Home</title>
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/delete.css">
-    <link rel="stylesheet" href="public/css/success.css">
+    <link rel="stylesheet" href="public/css/sidenav.css">
     <link rel="stylesheet" href="public/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -27,7 +26,7 @@
             <div
                 class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-bars"></i> Sommaire</a></li>
+                    <li class="nav-item" role="presentation" onclick="openNav()" ><a class="nav-link" style="cursor: pointer"><i class="fa fa-bars"></i> Sommaire</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#inscrire" data-toggle="modal"><i class="fa fa-pencil"></i> S'inscrire</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#connecter" data-toggle="modal"><i class="fa fa-sign-in"></i> Se connecter</a></li>
                 </ul>
@@ -39,7 +38,7 @@
             <div class="container">
                 <div class="about-me">
                     <p>Bienvenu <strong>sur</strong> G-Store</p>
-                    <a class="btn btn-primary" role="button" href="#"><i class="fa fa-cart-plus"></i> Achéter un jeu</a>
+                    <a class="btn btn-primary" role="button" href="#game"><i class="fa fa-cart-plus"></i> Achéter un jeu</a>
                 </div>
             </div>
         </section>
@@ -49,7 +48,7 @@
             <section class="portfolio-block projects-cards">
                 <div class="container">
                     <div class="heading">
-                        <h2>G-Store Jeux</h2>
+                        <h2 id="game" >G-Store Jeux</h2>
                         <p class="text-muted card-text compte">Vous pouvez achéter tous les jeux que vous vouliez mais vous devez d'abord vous connectez ou créer un compte G-Store.</p>
                     </div>
                     <div class="row">
@@ -375,12 +374,22 @@
     </div>
 
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Landry</a>
+        <a href="#">Daniel</a>
+        <a href="#">Gaetan</a>
+        <a href="#">Juno</a>
+      </div>
+
+
 
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/pikaday.min.js"></script>
     <script src="public/js/main.js"></script>
     <script src="public/js/theme.js"></script>
+    <script src="public/js/sidenav.js"></script>
 </body>
 
 </html>
