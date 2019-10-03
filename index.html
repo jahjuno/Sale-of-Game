@@ -7,10 +7,8 @@
     <title>G-Store | Home</title>
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/delete.css">
-    <link rel="stylesheet" href="public/css/success.css">
     <link rel="stylesheet" href="public/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="public/css/pikaday.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -297,7 +295,7 @@
                             <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="cpassword" placeholder="Confirmer le mot de passe" required="required">
                         </div>
                         <div class="form-group">
-                            <input type="boutton" onclick="inscription()" name="valider_inscription"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="S'inscrire">
+                            <input type="button" onclick="inscription()" name="valider_inscription"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="S'inscrire">
                         </div>
                         <div>
                           <p class="alert-danger" style="text-align: center !important" name="erreur"></p>
@@ -312,8 +310,8 @@
     <div id="delete" class="modal fade">
         <div class="modal-dialog modal-confirm">
             <div class="modal-content">
-                <div class="modal-header">				
-                    <h4 class="modal-title">Etes vous sûr ?</h4>	
+                <div class="modal-header">
+                    <h4 class="modal-title">Etes vous sûr ?</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -344,8 +342,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <div id="acheter" class="modal fade">
         <div class="modal-dialog modal-login">
             <div class="modal-content">
