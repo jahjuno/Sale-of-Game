@@ -7,8 +7,11 @@
     <title>G-Store | Home</title>
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/delete.css">
+    <link rel="stylesheet" href="public/css/success.css">
     <link rel="stylesheet" href="public/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -66,9 +69,9 @@
                                 <div class="card-body">
                                     <h6><a href="#">Dark Soul 3</a></h6>
                                     <p class="text-muted card-text">Aventure</p>
-                                    <a class="btn btn-outline-primary play" role="button" href="#play" data-toggle="modal"><i class="fa fa-play"></i></a>
-                                    <a class="btn btn-outline-success" role="button" href="#"><i class="fa fa-shopping-cart"></i></a>
-                                    <a class="btn btn-outline-danger"  role="button" href="#"><i class="fa fa-trash"></i></a>
+                                    <a class="btn btn-outline-primary " role="button" href="#play" data-toggle="modal"><i class="fa fa-play"></i></a>
+                                    <a class="btn btn-outline-success" role="button" href="#success" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a>
+                                    <a class="btn btn-outline-danger"  role="button" href="#delete" data-toggle="modal"><i class="fa fa-trash"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +81,7 @@
                                     <h6><a href="#">PUBG Mobile</a></h6>
                                     <p class="text-muted card-text">Action, Stratégie</p>
                                     <a class="btn btn-outline-primary play" role="button" href="#"><i class="fa fa-play"></i></a>
-                                    <a class="btn btn-outline-success" role="button" href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    <a class="btn btn-outline-success" role="button" href="#acheter" data-toggle="modal"><i class="fa fa-shopping-cart"></i></a>
                                     <a class="btn btn-outline-danger"  role="button" href="#"><i class="fa fa-trash"></i></a>
                                 </div>
                             </div>
@@ -252,7 +255,6 @@
                     <form id="connecter">
                         <div class="form-group">
                             <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="email" placeholder="Email" required="required">
-
                         </div>
                         <div class="form-group">
                             <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="password" placeholder="Mot de passe" required="required">
@@ -303,6 +305,74 @@
             </div>
         </div>
     </div>
+
+
+    <div id="delete" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header">				
+                    <h4 class="modal-title">Etes vous sûr ?</h4>	
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Voulez-vous vraiment supprimer ce jeu ? Cette action est irréversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="success" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" >Génial!</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Votre opération a été réussi sans problème</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="acheter" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: bold;">Achat d'un jeu</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0"><a href="#"><img src="public/images/jeux/pubg.jpg" style="width: 425px; margin-left: 20px;" alt="Card Image" class=""></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form id="connecter">
+                        <div class="form-group">
+                            <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="email" placeholder="Nom de la Banque" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="password" placeholder="Votre numéro de compte" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" onclick="verifie_password()" name="valider_se_connecter"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="Achéter ce jeu">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
