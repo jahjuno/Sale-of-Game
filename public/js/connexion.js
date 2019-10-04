@@ -101,6 +101,7 @@ function verifie_password(){
 
         form.append(html);
         form.append(but);
+        form.prepend($('#sary'))
         $('#connecter input[type=button]').attr('value', 'Confirmer Achat');
         mail.attr('disabled', 'disabled');
         password.attr('disabled', 'disabled');
