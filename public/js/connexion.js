@@ -1,5 +1,5 @@
 function capitale(texte) {
-  // atao majuscule premiere lettre 
+  // atao majuscule premiere lettre
     return texte.charAt(0).toUpperCase() + texte.slice(1);
 }
 
@@ -90,8 +90,21 @@ function verifie_password(){
 
     function feed_back(rep){
       if (rep == 1){
-        alert('here');
-        ("#connecter").modal('hide');
+        // $("#connecter").modal('hide');
+        error.text('');
+        html = "<div class='form-group'>";
+        html += '<input type="text" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token Orange Money" required="required">';
+        html += "</div>";
+        $("#connecter .forgetpass").remove(); // fafana le soratra mdp oublié iny
+        form = $("#connecter .farany"); // selectionner le form
+        but = $("#connecter .bouton"); // selectionneko le button
+
+        form.append(html);
+        form.append(but);
+        but.attr('value', 'Confirmer Achat');
+        mail.attr('disabled', 'disabled');
+        password.attr('disabled', 'disabled');
+        $("#connecter .modal-title").html("Acheter le Jeu");
       }
       else{
         error.text(rep);

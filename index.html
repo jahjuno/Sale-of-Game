@@ -252,7 +252,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="modal-body">
-                    <form id="connecter">
+                    <form id="connecter" class="farany">
                         <div class="form-group">
                             <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="mail" placeholder="Email" required="required">
                         </div>
@@ -262,12 +262,12 @@
                         <div>
                           <p class="alert-danger" style="text-align: center !important" name="erreur"></p>
                         </div>
-                        <div class="form-group">
+                        <div class="bouton form-group">
                             <input type="button" onclick="verifie_password()" name="valider_se_connecter"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="Se connecter">
                             <label style="color:red;font-size:11;text-align: center"></label>
                         </div>
                     </form>
-                    <p class="hint-text small"><a href="#" OnClick="window.location='index.php?action=mot_de_passe_oubliee'">Mot de passe oublié?</a></p>
+                    <p class="forgetpass hint-text small"><a href="#" OnClick="window.location='index.php?action=mot_de_passe_oubliee'">Mot de passe oublié?</a></p>
                 </div>
             </div>
         </div>
@@ -409,6 +409,7 @@
     <script src="public/js/connexion.js"></script>
     <script src="public/js/theme.js"></script>
     <script src="public/js/sidenav.js"></script>
+
 </body>
 
 </html>
