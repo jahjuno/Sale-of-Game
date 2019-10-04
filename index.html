@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="public/css/pikaday.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
 </head>
 <style>
     body{
@@ -253,10 +254,13 @@
                 <div class="modal-body">
                     <form id="connecter">
                         <div class="form-group">
-                            <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="email" placeholder="Email" required="required">
+                            <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="mail" placeholder="Email" required="required">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="password" placeholder="Mot de passe" required="required">
+                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="password" placeholder="Mot de passe" required="required">
+                        </div>
+                        <div>
+                          <p class="alert-danger" style="text-align: center !important" name="erreur"></p>
                         </div>
                         <div class="form-group">
                             <input type="button" onclick="verifie_password()" name="valider_se_connecter"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="Se connecter">
@@ -388,7 +392,7 @@
                 <a>Label 2</a>
                 <a>Label 3</a>
             </div>
-        <a href="#" class="accordion"> <i class="fa fa-node"></i> Javascript</a>
+        <a href="#" class="accordion"> <i class="fa fa-js"></i> Javascript</a>
             <div class="panel">
                 <a>Label 1</a>
                 <a>Label 2</a>
