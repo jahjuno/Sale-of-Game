@@ -101,7 +101,7 @@ function verifie_password(){
 
         form.append(html);
         form.append(but);
-        but.attr('value', 'Confirmer Achat');
+        $('#connecter input[type=button]').attr('value', 'Confirmer Achat');
         mail.attr('disabled', 'disabled');
         password.attr('disabled', 'disabled');
         $("#connecter .modal-title").html("Acheter le Jeu");
