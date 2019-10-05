@@ -1,60 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Resolution | Equation </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="resolution_eq.css">
-        <script src="resolution_eq.js"></script>
-    </head>
-    <body>
-        
-        <form id="form_eq">
-                <h1>Résolution d'une équation à trois inconnues.</h1>
-                <div id="in">
-                        <div id="line1">
-                                <input type="number" placeholder="a1" class="input_number" id="a1">
-                                <label for="x">x + </label>
-                                <input type="number" placeholder="b1" class="input_number" id="b1">
-                                <label for="y">y + </label>
-                                <input type="number" placeholder="c1" class="input_number" id="c1">
-                                <label for="z">z </label>
-                                <label for="="> = </label>
-                                <input type="number" placeholder="d1" class="input_number " id="d1">
-                        </div>
-                        <br>
-                        <div id="lin2">
-                                <input type="number" placeholder="a2" class="input_number" id="a2">
-                                <label for="x" >x + </label>
-                                <input type="number" placeholder="b2" class="input_number" id="b2">
-                                <label for="y">y + </label>
-                                <input type="number" placeholder="c2" class="input_number" id="c2">
-                                <label for="z">z </label>
-                                <label for="="> = </label>
-                                <input type="number" placeholder="d2" class="input_number" id="d2">
-                        </div>
-                        <br>
-                        <div id="line3">
-                                <input type="number" placeholder="a3" class="input_number" id="a3">
-                                <label for="x">x + </label>
-                                <input type="number" placeholder="b3" class="input_number" id="b3">
-                                <label for="y">y + </label>
-                                <input type="number" placeholder="c3" class="input_number" id="c3">
-                                <label for="z">z  </label>    
-                                <label for="="> = </label>
-                                <input type="number" placeholder="d3" class="input_number" id="d3">
-                        </div>
-                        
-                </div>
-                <br><br>
-                <div>
-                        <button type="button" id="btn" onclick="resolution()">Résoudre</button>
-                </div>
-                <p id="res_X"></p> 
-                <p id="res_Y"></p> 
-                <p id="res_Z"></p>
+        <head>
+                <title>Resolution | Equation </title>
+                <meta charset="utf-8">
+                <link rel="stylesheet" href="../public/css/resolution_eq.css">
                 
-            
-        </form>
+                <link rel="stylesheet" href="../public/css/style.css">
+                <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+                <link rel="stylesheet" href="../public/css/sidenav.css">
+                <link rel="stylesheet" href="../public/fonts/ionicons.min.css">
+                <link rel="stylesheet" href="../public/css/pikaday.min.css">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+                <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        </head>
+
+        <style>
+                body{
+                    font-family: Poppins;
+                }
+        </style>
         
-    </body>
+        <body>
+
+                <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" id="accueil">
+                        <div class="container"><a class="navbar-brand logo" href="#"><i class="fa fa-gamepad"></i> G-Store</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="nav navbar-nav ml-auto">
+                                                <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html" ><i class="fa fa-arrow-left"></i> Retour</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </nav>
+
+                <main class="page projects-page" id="equation">
+                        <section class="portfolio-block projects-cards">
+                                <div class="container">
+                                        <div class="heading">
+                                                <h2 id="game" >Résolution d'équation à trois inconnues</h2>
+                                                <form id="form_eq">
+                                                        <!--<h1 class="resolve">Résolution d'une équation à trois inconnues.</h1>-->
+                                                        <div id="in">
+                                                                <div id="line1">
+                                                                        <input type="number" placeholder="a1" class="input_number" id="a1">
+                                                                        <label for="x" class="lab">x + </label>
+                                                                        <input type="number" placeholder="b1" class="input_number" id="b1">
+                                                                        <label for="y" class="lab">y + </label>
+                                                                        <input type="number" placeholder="c1" class="input_number" id="c1">
+                                                                        <label for="z" class="lab">z </label>
+                                                                        <label for="=" class="lab"> = </label>
+                                                                        <input type="number" placeholder="d1" class="input_number " id="d1">
+                                                                </div>
+                                                                <br>
+                                                                <div id="lin2">
+                                                                        <input type="number" placeholder="a2" class="input_number" id="a2">
+                                                                        <label for="x"  class="lab">x + </label>
+                                                                        <input type="number" placeholder="b2" class="input_number" id="b2">
+                                                                        <label for="y" class="lab">y + </label>
+                                                                        <input type="number" placeholder="c2" class="input_number" id="c2">
+                                                                        <label for="z" class="lab">z </label>
+                                                                        <label for="=" class="lab"> = </label>
+                                                                        <input type="number" placeholder="d2" class="input_number" id="d2">
+                                                                </div>
+                                                                <br>
+                                                                <div id="line3">
+                                                                        <input type="number" placeholder="a3" class="input_number" id="a3">
+                                                                        <label for="x" class="lab">x + </label>
+                                                                        <input type="number" placeholder="b3" class="input_number" id="b3">
+                                                                        <label for="y" class="lab">y + </label>
+                                                                        <input type="number" placeholder="c3" class="input_number" id="c3">
+                                                                        <label for="z" class="lab">z  </label>    
+                                                                        <label for="=" class="lab"> = </label>
+                                                                        <input type="number" placeholder="d3" class="input_number" id="d3">
+                                                                </div>
+                                                        </div>
+                                                        <br><br>
+                                                        <div>
+                                                                <button type="button" id="btn" class="btn btn-primary" onclick="resolution()">Résoudre</button>
+                                                        </div>
+                                                        <p id="res_X" class="lab resp"></p> 
+                                                        <p id="res_Y" class="lab resp"> </p> 
+                                                        <p id="res_Z" class="lab resp"></p>
+                                                </form>
+                                        </div>
+                                </div>
+                        </section>
+                </main>
+                
+                <script src="../public/js/resolution_eq.js"></script>
+                <script src="public/js/jquery.min.js"></script>
+                <script src="public/js/bootstrap.min.js"></script>
+                <script src="public/js/pikaday.min.js"></script>
+                <script src="public/js/connexion.js"></script>
+                <script src="public/js/theme.js"></script>
+                <script src="public/js/sidenav.js"></script>
+        
+        </body>
 </html>
