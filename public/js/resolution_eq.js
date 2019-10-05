@@ -24,8 +24,8 @@ function resolution(){
    x = (((d1*b2*c3) + (b1*c2*d2) + (c1*d2*b3)) - ((d3*b2*c1) + (b3*c2*d1) + (c3*d2*b1))) / detA;
    y = (((a1*d2*c3) + (d1*c2*a3) + (c1*a2*d3)) - ((a3*d2*c1) + (d3*c2*a1) + (c3*a2*d1))) / detA;
    z = (((a1*b2*d3) + (b1*d2*a3) + (d1*a2*b3)) - ((a3*b2*d1) + (b3*d2*a1) + (d3*a2*b1))) / detA;
-   document.getElementById("res_X").innerHTML="x="+x;
-   document.getElementById("res_Y").innerHTML="y="+y;
-   document.getElementById("res_Z").innerHTML="z="+z;
+   document.getElementById("res_X").innerHTML="x="+x.toFixed(2);
+   document.getElementById("res_Y").innerHTML="y="+y.toFixed(2);
+   document.getElementById("res_Z").innerHTML="z="+z.toFixed(2);
    
 }
