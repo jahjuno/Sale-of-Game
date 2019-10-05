@@ -23,5 +23,27 @@ class Query_bdd extends Connect_bdd{
     }
 
   }
+
+  public function connexion($mail, $passwd){
+    $bdd = $this->dbconnect();
+
+    $yet_mail = $bdd->query("SELECT 1 FROM Membre WHERE Mail='$mail'");
+
+    if ($yet_mail->rowCount() == 0){
+        return "Adresse Mail Inconnu";
+    }
+    else{
+        $passwd = sha1($passwd);
+        $login = $bdd->query("SELECT 1 FROM Membre WHERE Mail='$mail' AND Password='$passwd'");
+
+        if ($login->rowCount() == 0){
+            return "Mot de passe Incorrecte";
+        }
+        else{
+            return true;
+        }
+    }
+
+  }
 }
 ?>
