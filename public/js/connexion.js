@@ -14,7 +14,7 @@ function inscription(){
   let error = $("#inscrire p[name=erreur]");
   if ((/^[a-zA-Z]{3,}$/).test(nom.val())) // verifiena fa lettre ihany no nampidiriny de telo farafahakeliny
   {
-    if ((/^[a-zA-Z ]{3,}$/).test(prenom.val())) // verifiena kar le anarana takeo fa afaka asina espace raika ty
+    if ((/^[a-zA-Z ']{3,}$/).test(prenom.val())) // verifiena kar le anarana takeo fa afaka asina espace raika ty
     {
       if (/^[a-zA-Z]{1}[a-zA-Z_.0-9]{1,}@[a-z]{3,}.[a-z]{2,4}$/.test(mail.val()))  // verifiena hoe tena pozina mail marna io sa tsia
       {
