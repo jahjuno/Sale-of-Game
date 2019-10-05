@@ -5,17 +5,27 @@ body{
 form{
     padding-top: 2%;
     text-align: center;
-    background-color: #704470;
+    background-image: url("../images/math.jpg");
+    background-size: cover;
+    background-position: -90px;
     width: 600px;
-    height: 500px;
-    border-radius: 10px;
+    height: 450px;
+    border-radius: 20px;
     margin-left: 28%;
-    margin-top: 3%;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+form:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .input_number{
     width: 50px;
-    border-radius: 10px;
+    border-radius: 4px;
+    border:none;
+    text-align: center;
+    background-color: beige;
 
 }
 
@@ -31,4 +41,21 @@ label{
     border-radius: 10px;
     width: 30%;
     
+}
+
+.resolve{
+    color: #fff !important;
+    font-size: 28px;
+}
+
+.lab{
+    color: #fff;
+}
+
+.resp{
+    font-size: 17px;
+}
+
+#equation{
+    margin-top: -5% !important;
 }
