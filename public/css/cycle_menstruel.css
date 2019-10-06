@@ -1,0 +1,53 @@
+body{
+        padding-top: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+}
+
+h1{
+        color: rgb(22, 21, 22);
+        text-align: center;
+}
+
+#titre{
+
+        background-image: linear-gradient(to right, #ff00ff, #4a4a4a);
+        border-radius: 10px;
+        height: 70px;
+        padding-top: 5px;
+}
+
+#duree_cycle{
+
+        background-color: #ff00ff;
+        width: 600px;
+        height: 400px;
+        padding-top: 12%;
+        padding-left: 2%;
+        margin-left: 7%;
+        border-radius: 10px;
+        text-align: center;
+}
+#lab_titre_one{
+        text-align: center;
+}
+.me{
+
+        width: 20%;
+        height: 10%;
+        
+}
+
+#duree_cycleTwo{
+
+        text-align: center;
+        background-color: #ff00ff;
+        width: 600px;
+        height: 400px;
+        padding-top: 12%;
+        padding-left: 2%;
+        margin-top:0%;
+        margin-left: 0%;
+        border-radius: 10px;
+}
+
