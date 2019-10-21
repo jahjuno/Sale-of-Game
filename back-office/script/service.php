@@ -22,4 +22,11 @@ if (isset($_POST['connexion'])){
   echo $query->connexion($mail, $password);
 }
 
+
+if (isset($_POST['gamelist'])){
+  $query = new Query_bdd();
+  echo $query->all_games();
+}
+
+
 ?>
