@@ -151,7 +151,6 @@ $(function() {
 			Mtmp.find('source').attr('src', dataP[0][i][4]);
 
 			Mmod.after(Mtmp);
-			alert(Mtmp.attr('id'));
 		}
 		Mmod.remove();
 		mod.remove();
