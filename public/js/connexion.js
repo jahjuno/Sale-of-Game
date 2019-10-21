@@ -136,6 +136,7 @@ $(function() {
 		mod = $('#game_model');
 		for (i=0;i<dataP[0].length;i++){
 			tmp = mod.clone();
+			tmp.attr('id', dataP[0][i][1])
 			tmp.css('display', 'block');
 			tmp.find('img').attr('src', dataP[0][i][2]);
 			tmp.find('h6>a').text(dataP[0][i][1]);
@@ -152,6 +153,8 @@ $(function() {
 
 			Mmod.after(Mtmp);
 			alert(Mtmp.attr('id'));
+
+			$('#listSearch').append('<option>' + dataP[0][i][1] + '</option>')
 		}
 		Mmod.remove();
 		mod.remove();
@@ -159,3 +162,6 @@ $(function() {
 });
 
 		
+function search_game(value){
+	window.location = '#' + value;
+}

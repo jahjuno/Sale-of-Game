@@ -29,8 +29,12 @@
                 <ul class="nav navbar-nav ml-auto">
 			<li class="nav-item"> 
 				<form class="form-newsletter" method="POST" action="#">
-					<input type="email" placeholder="Rechercher ici..." list="game">
-					<button class="btn-submit" type="submit"><i class="fa fa-search"></i></button>
+                    <input id="zavatra" type="text" placeholder="Rechercher ici..." list="listSearch">
+                    <datalist id='listSearch'>
+                        
+                    </datalist>
+
+					<button class="btn-submit" onclick="search_game($('#zavatra').val())" type="button"><i class="fa fa-search"></i></button>
 				</form></li>
 			<li class="nav-item" role="presentation" onclick="openNav()" ><a class="nav-link" style="cursor: pointer"><i class="fa fa-bars"></i> Sommaire</a></li>
 			<li class="nav-item" role="presentation"><a class="nav-link" href="#inscrire" data-toggle="modal"><i class="fa fa-pencil"></i> S'inscrire</a></li>
