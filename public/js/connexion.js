@@ -131,6 +131,8 @@ $(function() {
 	function list_game(data){
 		dataP = new Array(JSON.parse(data));
 
+		Mmod = $('#play');
+		
 		mod = $('#game_model');
 		for (i=0;i<dataP[0].length;i++){
 			tmp = mod.clone();
@@ -138,9 +140,20 @@ $(function() {
 			tmp.find('img').attr('src', dataP[0][i][2]);
 			tmp.find('h6>a').text(dataP[0][i][1]);
 			tmp.find('#cat').text(dataP[0][i][3]);
+			tmp.find('.playB').attr('href','#play'+ dataP[0][i][0]);
 
-			mod.parent().append(tmp);                     
+			mod.parent().append(tmp);
+			
+			Mtmp = Mmod.clone();
+			Mtmp.attr('id', 'play'+dataP[0][i][0]);
+			Mtmp.find('h4').text("Gameplay de " + dataP[0][i][1]);
+			Mtmp.find('h6').text(dataP[0][i][1]);
+			Mtmp.find('source').attr('src', dataP[0][i][4]);
+
+			Mmod.after(Mtmp);
+			alert(Mtmp.attr('id'));
 		}
+		Mmod.remove();
 		mod.remove();
 	}
 });
