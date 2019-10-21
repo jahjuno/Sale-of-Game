@@ -39,5 +39,14 @@ class Query_bdd extends Connect_bdd{
     }
 
   }
+
+  public function all_games(){
+    $bdd = $this->dbconnect();
+    $games = $bdd->query("SELECT * FROM Game");
+
+    $all_games = $games->fetchall();
+
+    return  json_encode($all_games);
+  }
 }
 ?>
