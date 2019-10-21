@@ -4,12 +4,13 @@
 
 
 @keyframes backg {
-        0%{background-image: url("../images/jeux/cod.png")}
-        100%{background-image: url("../images/back.jpg")}
+        0%{background-image: url("../images/ec.jpg")}
+        30%{background-image: url("../images/ec.jpg")}
+        100%{background-image: url("../images/blurb.png")}
 }
 .lanidng-page{
         animation-name: backg;
-        animation-duration:20s;
+        animation-duration:15s;
         animation-delay:-1s;
         animation-iteration-count:infinite;
         animation-direction:alternate;
