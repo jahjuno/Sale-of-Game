@@ -1,8 +1,8 @@
--- MariaDB dump 10.17  Distrib 10.4.7-MariaDB, for Linux (x86_64)
+-- MariaDB dump 10.17  Distrib 10.4.8-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: gstore
 -- ------------------------------------------------------
--- Server version	10.4.7-MariaDB
+-- Server version	10.4.8-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -14,6 +14,33 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Game`
+--
+
+DROP TABLE IF EXISTS `Game`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Game` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titre` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `couverture` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `categorie` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `gameplay` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Game`
+--
+
+LOCK TABLES `Game` WRITE;
+/*!40000 ALTER TABLE `Game` DISABLE KEYS */;
+INSERT INTO `Game` VALUES (1,'Moto-cross 4','public/images/jeux/mt.jpg','Sport, Course',''),(2,'Dark Soul 3','public/images/jeux/ds.jpg','Aventure','public/videos/ds.mkv'),(3,'PUBG Mobile','public/images/jeux/pubg.jpg','Action, Strategie',''),(4,'Modern Warfare 3','public/images/jeux/cod.jpg','Action',''),(5,'PES 2019','public/images/jeux/pes.jpg','Sport',''),(6,'Far Cry 5','public/images/jeux/far.jpg','Action',''),(7,'Blur','public/images/jeux/blur.png','Course',''),(8,'GTA 5','public/images/jeux/gta.jpg','Action, Aventure',''),(9,'Burnout 3','public/images/jeux/bur.jpg','Course',''),(10,'NBA 2K20','public/images/jeux/nba.jpg','Sport',''),(11,'Fortnite','public/images/jeux/for.jpg','Action, Strategie',''),(12,'Euro Truck Simulator 2','public/images/jeux/euro.jpg','Simulation, Aventure','');
+/*!40000 ALTER TABLE `Game` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `Membre`
@@ -53,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-03 22:04:41
+-- Dump completed on 2019-10-21 23:42:40
