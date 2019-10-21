@@ -18,11 +18,13 @@
                 
                 <div class="row">
                         <div class="col-sm">
-                                
                                 <form id="duree_cycle">
+                                        <label class="lab_titre_two">Date du 1er jour du règle.</label><br>
+                                        <input type="date" name="premier_j" id="premier_j1"><br>
                                         <label id="lab_titre_one">Entrer la durée de votre cycle : </label><br>
-                                        <input type="number" placeholder="exemple: 22"><br><br><br><br>
-                                        <button type="submit" class="btn btn-info me">Envoyer</button>
+                                        <input type="number" placeholder="exemple: 22" id="jour_cycle"><br><br>
+                                        <button type="submit" class="btn btn-info me" onclick="calucle_Ovulation2()">Envoyer</button><br>
+                                        <p id="resulat1"> </p>
                                 </form>
                         </div>
 
@@ -30,9 +32,10 @@
                                 <form id="duree_cycleTwo">
                                         <label class="lab_titre_two">Date du 1er jour du règle.</label><br>
                                         <input type="date" name="premier_j" id="premier_j"><br>
-                                        <label class="lab_titre_two">Date du dernier jour du règle:</label><br>
-                                        <input type="date" name="prmier_j" id="premier_j"><br><br>
-                                        <button type="submit" class="btn btn-info me" onclick="calucle_Ovulation()">Envoyer</button>
+                                        <label class="lab_titre_two">Date de la prochaine règle:</label><br>
+                                        <input type="date" name="prmier_j" id="deuxieme_j"><br><br>
+                                        <button type="submit" class="btn btn-info me" onclick="calucle_Ovulation()">Envoyer</button><br>
+                                        <p id="resultat2"> </p>
                                 </form>
                         </div>
                         
