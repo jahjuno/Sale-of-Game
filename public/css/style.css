@@ -2,12 +2,23 @@
         font-weight: normal !important;
 }
 
+
+@keyframes backg {
+        0%{background-image: url("../images/jeux/cod.png")}
+        100%{background-image: url("../images/back.jpg")}
+}
 .lanidng-page{
-        background-image: url("../images/back.jpg");
+        animation-name: backg;
+        animation-duration:20s;
+        animation-delay:-1s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
         background-repeat: unset;
-        background-size: cover ;
+        background-size: cover;
         height: 700px;
 }
+
+
 
 .fa-trash{
         color: rgb(207, 15, 15) !important;
@@ -53,7 +64,6 @@
 .compte{
         color: black !important; 
 }
-
 #game{
         color: #0ea0ff;
 }
@@ -67,7 +77,8 @@
         display: inline !important;
         cursor: pointer !important;
 }
-
 .form-newsletter{position:relative;display:block;margin:0px auto;padding:0;width:100%;max-width:500px}
+
 .form-newsletter input[type=email]{padding:12px 100px 12px 20px;width:100%;border:none;outline:0;border-radius:35px;background:#fff;color:#555;box-shadow:2px 4px 30px rgba(80,80,80,.1)}
+
 .form-newsletter [type=submit]{position:absolute;top:4px;right:4px;margin:0;padding:8px 20px;border:none;outline:0;border-radius:35px;color:#fff;cursor:pointer;background:#0e0238;}
