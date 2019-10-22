@@ -162,7 +162,7 @@ $(function() {
 
 			Mmod.after(Mtmp);
 
-			$('#listSearch').append('<option>' + dataP[0][i][1] + '</option>')
+			$('#listSearch').append('<option style="color:red;">' + dataP[0][i][1] + '</option>')
 
 			buyTmp = buy.clone();
 			buyTmp.attr('id', 'acheter' + dataP[0][i][0]);
