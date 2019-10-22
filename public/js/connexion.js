@@ -150,6 +150,7 @@ $(function() {
 			Mtmp.find('h4').text("Gameplay de " + dataP[0][i][1]);
 			Mtmp.find('h6').text(dataP[0][i][1]);
 			Mtmp.find('source').attr('src', dataP[0][i][4]);
+			Mtmp.find('.text-muted').text(dataP[0][i][3]);
 
 			Mmod.after(Mtmp);
 
