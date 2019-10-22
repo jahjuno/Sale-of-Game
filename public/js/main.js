@@ -64,6 +64,7 @@ function sInscrire(nom, prenom, mail, password){
 		function feed_back(response){
 			if (response == 1){
 				$('#inscrire').modal('hide');
+				$('#success').modal('show');
 			}
 			else{
 				$("#inscrire p[name=erreur]").text(response);
@@ -118,7 +119,8 @@ function verifie_password(){
 		
 		
 }
-		
+
+
 $(function() {
 	$.post(
 		'back-office/script/service.php',
