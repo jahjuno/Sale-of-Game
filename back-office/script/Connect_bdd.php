@@ -3,13 +3,13 @@ require('./database.php');
 
 class Query_bdd extends Connect_bdd{
 
-  public function inscription($nom, $prenom, $mail, $passwd){
+  public function inscription($nom, $prenom, $mail, $phone, $passwd){
     $bdd = $this->dbconnect();
     $yet_mail = $bdd->query("SELECT 1 FROM Membre WHERE Mail='$mail'");
 
     if ($yet_mail->rowCount() == 0){
-      $ajouter = $bdd->prepare("INSERT INTO Membre(Nom, Prenom, Mail, Password) values(? , ? , ? , ?)");
-      $ajouter->execute(array($nom, $prenom, $mail, sha1($passwd)));
+      $ajouter = $bdd->prepare("INSERT INTO Membre(Nom, Prenom, Mail, Phone, Password) values(? , ? , ? , ?, ?)");
+      $ajouter->execute(array($nom, $prenom, $mail, $phone, sha1($passwd)));
       return true;
     }
     else{

@@ -9,6 +9,7 @@ function inscription(){
 	let nom = $("#inscrire input[name=nom]"); // alaina le champ ana texte ampidirana anarana
 	let prenom = $("#inscrire input[name=prenom]"); // karan'le ambony fogn fa porenom ndrek raika ty
 	let mail = $("#inscrire input[name=mail]"); // mangalaka an le mail nsoratana
+	let phone = $("#inscrire input[name=phone]"); // numero telephone
 	let pass1 = $("#inscrire input[name=password]");  // l objet html mot de passe
 	let pass2 = $("#inscrire input[name=cpassword]");  // le confirmationy e
 	let error = $("#inscrire p[name=erreur]");
@@ -18,19 +19,24 @@ function inscription(){
 		{
 			if (/^[a-zA-Z]{1}[a-zA-Z_.0-9]{1,}@[a-z]{3,}.[a-z]{2,4}$/.test(mail.val()))  // verifiena hoe tena pozina mail marna io sa tsia
 			{
-				if (pass1.val().length > 6) // verifiena sod ambaniny ny fito ny alavany mot de apsse
-				{
-					if (pass1.val() === pass2.val()) // verifiena oe mitovy le mot de passe nosoratana
+				if (/^03[2349]{1}[0-9]{7}$/.test(phone.val())){
+					if (pass1.val().length > 6) // verifiena sod ambaniny ny fito ny alavany mot de apsse
 					{
-						sInscrire(nom.val(), prenom.val(), mail.val(), pass1.val());
+						if (pass1.val() === pass2.val()) // verifiena oe mitovy le mot de passe nosoratana
+						{
+							sInscrire(nom.val(), prenom.val(), mail.val(), phone.val(), pass1.val());
+						}
+						else{
+							error.text("Le mot de passe ne correspond pas"); // mampiseho text d erreur
+						}
 					}
 					else{
-						error.text("Le mot de passe ne correspond pas"); // mampiseho text d erreur
+						error.text("Votre mot de passe est trop court");
 					}
 				}
 				else{
-					error.text("Votre mot de passe est trop court");
-				}
+					error.text("Veuiller entre un numero valide de 10 chiffres");
+				}	
 				
 			}
 			else{
@@ -48,7 +54,7 @@ function inscription(){
 	
 }
 
-function sInscrire(nom, prenom, mail, password){
+function sInscrire(nom, prenom, mail, phone, password){
 	$.post(
 		'back-office/script/service.php',
 		{
@@ -56,6 +62,7 @@ function sInscrire(nom, prenom, mail, password){
 			nom: nom.toUpperCase(),
 			prenom:capitale(prenom),
 			mail: mail,
+			phone: phone,
 			password: password
 		},
 		feed_back

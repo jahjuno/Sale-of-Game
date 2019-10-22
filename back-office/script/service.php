@@ -6,10 +6,11 @@ if (isset($_POST['inscription'])){
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
     $mail = $_POST['mail'];
+    $phone = $_POST['phone'];
     $password = $_POST['password'];
 
     $query = new Query_bdd();
-    echo $query->inscription($nom, $prenom, $mail, $password);
+    echo $query->inscription($nom, $prenom, $mail, $phone, $password);
 
 }
 
