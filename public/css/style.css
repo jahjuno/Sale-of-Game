@@ -84,7 +84,8 @@
 
 .form-newsletter [type=button]{position:absolute;top:4px;right:4px;margin:0;padding:8px 20px;border:none;outline:0;border-radius:35px;color:#fff;cursor:pointer;background:#0e0238;}
 
-.datalists{
+
+option{
         color: #0ea0ff !important;
         background-color: #0ea0ff !important;
 }
