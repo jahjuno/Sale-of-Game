@@ -112,12 +112,12 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" style="font-weight: bold;">Gameplay de Dark Soul 3</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" onclick="closeAndPause()" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card border-0">
                         <div class="card-body">
-                            <video width="425" height="" controls>
+                            <video class="videoplay" width="425" height="" controls>
                                 <source src="public/videos/ds.mkv" type="video/mp4">
                             </video>
                             <h6>Dark Soul 3</h6>
@@ -294,7 +294,7 @@
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/pikaday.min.js"></script>
-    <script src="public/js/main.js"></script>
+    <script src="public/js/main.js"></script> <!-- Script principale du projet -->
     <script src="public/js/theme.js"></script>
     <script src="public/js/sidenav.js"></script>
 

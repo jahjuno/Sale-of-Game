@@ -165,3 +165,10 @@ $(function() {
 function search_game(value){
 	window.location = '#' + value;
 }
+
+
+function closeAndPause(){
+	$(".videoplay").each(function(){
+		$(this).get(0).pause();
+	});
+}
