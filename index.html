@@ -67,7 +67,7 @@
                                     <h6><a href="#"></a></h6>
                                     <p id='cat' class="text-muted card-text"></p>
                                     <a class="playB btn btn-outline-primary " data-toggle="modal" role="button" href=""><i class="fa fa-play"></i></a>
-                                    <a class="btn btn-outline-success" role="button" href="#"><i class="fa fa-shopping-cart"></i></a>
+                                    <a class="achatB btn btn-outline-success" data-toggle="modal" role="button" href=""><i class="fa fa-shopping-cart"></i></a>
                                     <a class="btn btn-outline-danger" role="button" href="#"><i class="fa fa-heart"></i></a>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@
         </div>
     </div>
 
-
+<!--
     <div id="connecter" class="modal fade">
         <div class="modal-dialog modal-login">
             <div class="modal-content">
@@ -160,7 +160,7 @@
             </div>
         </div>
     </div>
-
+-->
 
 
     <div id="inscrire" class="modal fade">
@@ -245,21 +245,26 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div id="sary" class="col-md-6 col-lg-4">
-                    <div class="card border-0"><a href="#"><img src="public/images/jeux/pubg.jpg" style="width: 425px; margin-left: 20px;" alt="Card Image" class=""></a>
+                    <div class="card border-0"><a href="#"><img src="" style="width: 425px; margin-left: 20px;" alt="Card Image" class=""></a>
                     </div>
                 </div>
                 <div class="modal-body">
-                    <form id="connecter">
+                    <form id="se_connecter" class="farany">
                         <div class="form-group">
-                            <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="email" placeholder="Nom de la Banque" required="required">
+                            <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="mail" placeholder="Email" required="required">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" id="password" placeholder="Votre numéro de compte" required="required">
+                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="password" placeholder="Mot de passe" required="required">
                         </div>
-                        <div class="form-group">
-                            <input type="button" onclick="verifie_password()" name="valider_se_connecter"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="Achéter ce jeu">
+                        <div>
+                          <p class="alert-danger" style="text-align: center !important" name="erreur"></p>
+                        </div>
+                        <div class="bouton form-group">
+                            <input type="button" onclick="verifie_password($(this).parents('form'))" name="valider_se_connecter"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="Se connecter">
+                            <label style="color:red;font-size:11;text-align: center"></label>
                         </div>
                     </form>
+                    <p class="forgetpass hint-text small"><a href="#" OnClick="window.location='index.php?action=mot_de_passe_oubliee'">Mot de passe oublié?</a></p>
                 </div>
             </div>
         </div>

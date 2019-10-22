@@ -73,10 +73,10 @@ function sInscrire(nom, prenom, mail, password){
 	}
 	
 	
-function verifie_password(){
-	let mail = $('#connecter input[name=mail]');
-	let password = $('#connecter input[name=password]');
-	let error = $('#connecter p[name=erreur]');
+function verifie_password(obj){
+	let mail = obj.find('input[name=mail]');
+	let password = obj.find('input[name=password]');
+	let error = obj.find(' p[name=erreur]');
 	
 	if (/^[a-zA-Z]{1}[a-zA-Z_.0-9]{1,}@[a-z]{3,}.[a-z]{2,4}$/.test(mail.val())){
 		$.post(
@@ -96,17 +96,15 @@ function verifie_password(){
 					html = "<div class='form-group'>";
 					html += '<input type="text" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token Orange Money" required="required">';
 					html += "</div>";
-					$("#connecter .forgetpass").remove(); // fafana le soratra mdp oublié iny
-					form = $("#connecter .farany"); // selectionner le form
-					but = $("#connecter .bouton"); // selectionneko le button
-					
-					form.append(html);
-					form.append(but);
-					form.prepend($('#sary'))
-					$('#connecter input[type=button]').attr('value', 'Confirmer Achat');
+					obj.find(".forgetpass").remove(); // fafana le soratra mdp oublié iny
+					but = obj.find(" .bouton"); // selectionneko le button
+					obj.append(html);
+					obj.append(but);
+					obj.find(' input[type=button]').attr('value', 'Confirmer Achat');
+					obj.find(' input[type=button]').removeAttr('onclick');
 					mail.attr('disabled', 'disabled');
 					password.attr('disabled', 'disabled');
-					$("#connecter .modal-title").html("Acheter le Jeu");
+					obj.find(" .modal-title").html("Acheter le Jeu");
 				}
 				else{
 					error.text(rep);
@@ -134,7 +132,7 @@ $(function() {
 		dataP = new Array(JSON.parse(data));
 
 		Mmod = $('#play');
-		
+		buy = $('#acheter');
 		mod = $('#game_model');
 		for (i=0;i<dataP[0].length;i++){
 			tmp = mod.clone();
@@ -144,6 +142,7 @@ $(function() {
 			tmp.find('h6>a').text(dataP[0][i][1]);
 			tmp.find('#cat').text(dataP[0][i][3]);
 			tmp.find('.playB').attr('href','#play'+ dataP[0][i][0]);
+			tmp.find('.achatB').attr('href','#acheter'+ dataP[0][i][0]);
 
 			mod.parent().append(tmp);
 			
@@ -157,7 +156,14 @@ $(function() {
 			Mmod.after(Mtmp);
 
 			$('#listSearch').append('<option>' + dataP[0][i][1] + '</option>')
+
+			buyTmp = buy.clone();
+			buyTmp.attr('id', 'acheter' + dataP[0][i][0]);
+			buyTmp.find('img').attr('src', dataP[0][i][2]);
+
+			buy.after(buyTmp);
 		}
+		buy.remove();
 		Mmod.remove();
 		mod.remove();
 	}
