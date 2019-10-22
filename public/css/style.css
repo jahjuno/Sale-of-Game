@@ -4,9 +4,9 @@
 
 
 @keyframes backg {
-        0%{background-image: url("../images/ec.jpg")}
-        30%{background-image: url("../images/ec.jpg")}
-        100%{background-image: url("../images/blurb.png")}
+        0%{background-image: url("../images/backgrounds/eclipse.jpg")}
+        30%{background-image: url("../images/backgrounds/eclipse.jpg")}
+        100%{background-image: url("../images/backgrounds/blur.png")}
 }
 .lanidng-page{
         animation-name: backg;
