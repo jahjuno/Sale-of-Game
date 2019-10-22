@@ -38,7 +38,7 @@ CREATE TABLE `Game` (
 
 LOCK TABLES `Game` WRITE;
 /*!40000 ALTER TABLE `Game` DISABLE KEYS */;
-INSERT INTO `Game` VALUES (1,'Moto-cross 4','public/images/jeux/mt.jpg','Sport, Course',''),(2,'Dark Soul 3','public/images/jeux/ds.jpg','Aventure','public/videos/ds.mkv'),(3,'PUBG Mobile','public/images/jeux/pubg.jpg','Action, Strategie',''),(4,'Modern Warfare 3','public/images/jeux/cod.jpg','Action',''),(5,'PES 2019','public/images/jeux/pes.jpg','Sport',''),(6,'Far Cry 5','public/images/jeux/far.jpg','Action',''),(7,'Blur','public/images/jeux/blur.png','Course',''),(8,'GTA 5','public/images/jeux/gta.jpg','Action, Aventure',''),(9,'Burnout 3','public/images/jeux/bur.jpg','Course',''),(10,'NBA 2K20','public/images/jeux/nba.jpg','Sport',''),(11,'Fortnite','public/images/jeux/for.jpg','Action, Strategie',''),(12,'Euro Truck Simulator 2','public/images/jeux/euro.jpg','Simulation, Aventure','');
+INSERT INTO `Game` VALUES (1,'Moto-cross 4','public/images/jeux/mt.jpg','Sport, Course','public/videos/moto.mkv'),(2,'Dark Soul 3','public/images/jeux/ds.jpg','Aventure','public/videos/ds.mkv'),(3,'PUBG Mobile','public/images/jeux/pubg.jpg','Action, Strategie','public/videos/pubg.mkv'),(4,'Modern Warfare 3','public/images/jeux/cod.jpg','Action','public/videos/cod.mkv'),(5,'PES 2019','public/images/jeux/pes.jpg','Sport','public/videos/pes.mkv'),(6,'Far Cry 5','public/images/jeux/far.jpg','Action',''),(7,'Blur','public/images/jeux/blur.png','Course',''),(8,'GTA 5','public/images/jeux/gta.jpg','Action, Aventure',''),(9,'Burnout 3','public/images/jeux/bur.jpg','Course',''),(10,'NBA 2K20','public/images/jeux/nba.jpg','Sport',''),(11,'Fortnite','public/images/jeux/for.jpg','Action, Strategie',''),(12,'Euro Truck Simulator 2','public/images/jeux/euro.jpg','Simulation, Aventure','');
 /*!40000 ALTER TABLE `Game` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-21 23:42:40
+-- Dump completed on 2019-10-22 18:22:12
