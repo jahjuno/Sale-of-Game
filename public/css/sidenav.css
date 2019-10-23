@@ -3,7 +3,7 @@
         width: 0;
         position: fixed;
         z-index: 1;
-        top: 10%;
+        top: 15%;
         left: 0;
         background-color: #0f4364;
         overflow-x: hidden;
@@ -53,7 +53,7 @@
         transition: 0.4s;
       }
       
-      .active, .accordion:hover {
+      .accordion:hover {
         background-color: #0d3853; 
       }
       

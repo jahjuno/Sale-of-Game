@@ -26,7 +26,7 @@
         <body>
     
             <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" id="accueil">
-                <div class="container"><a class="navbar-brand logo" href="#toppage" style="font-size: 35px;"><i class="fa fa-gamepad" style="font-size: 50px !important;"></i> G-Store</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="container"><a class="navbar-brand logo" href="index.html" style="font-size: 35px;" data-scroll-nav="0"><i class="fa fa-gamepad" style="font-size: 50px !important;"></i> G-Store</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item"> 
@@ -39,30 +39,30 @@
                             </li>
                             <li class="nav-item" role="presentation" onclick="openNav()" ><a class="nav-link" style="cursor: pointer"><i class="fa fa-bars"></i> Sommaire</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#inscrire" data-toggle="modal"><i class="fa fa-pencil"></i> S'inscrire</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-telegram"></i> Contact</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" data-scroll-nav="2"><i class="fa fa-telegram"></i> Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         
         
-            <main id="toppage" class="page lanidng-page">
-                <section class="portfolio-block block-intro">
+            <main id="toppage" class="page lanidng-page" data-scroll-index="0">
+                <section class="portfolio-block block-intro" >
                     <div class="container">
                         <div class="about-me">
                             <p>Bienvenu <strong>sur</strong> G-Store</p>
-                            <a class="btn btn-primary" role="button" href="#game"><i class="fa fa-cart-plus"></i> Achéter un jeu</a>
+                            <a class="btn btn-primary" role="presentation" href="index.html" data-scroll-nav="1"><i class="fa fa-cart-plus" ></i> Achéter un jeu</a>
                         </div>
                     </div>
                 </section>
             </main>
 
         
-            <main class="page projects-page" id="projets">
+            <main class="page projects-page" id="projets" data-scroll-index="1">
                 <section class="portfolio-block projects-cards">
                     <div class="container">
                         <div class="heading">
-                            <h2 id="game" >G-Store | Jeux</h2>
+                            <h2 id="game">G-Store | Jeux</h2>
                             <p class="text-muted card-text compte">Vous pouvez achéter tous les jeux que vous vouliez mais vous devez d'abord vous connectez ou créer un compte G-Store.</p>
                         </div>
                         <div class="row">
@@ -103,7 +103,7 @@
             </section>
 
             <!--CONTACT START-->
-            <main class="page projects-page">
+            <main class="page projects-page" data-scroll-index="2">
                 <section class="portfolio-block projects-cards">
                     <div class="container">
                             <div class="heading">
@@ -343,6 +343,9 @@
             <script src="public/js/main.js"></script> <!-- Script principale du projet -->
             <script src="public/js/theme.js"></script>
             <script src="public/js/sidenav.js"></script>
+
+            <script src="public/js/scroll/scrollIt.min.js"></script>
+            <script src="public/js/scroll/scripts.js"></script>
         
         </body>
     </html>
