@@ -5,7 +5,7 @@
         z-index: 1;
         top: 15%;
         left: 0;
-        background-color: #0f4364;
+        background-color: #10202a;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -14,7 +14,7 @@
       .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 16px !important;
+        font-size: 15px !important;
         color: #fff;
         display: block;
         transition: 0.3s;
@@ -41,7 +41,7 @@
 
 
       .accordion {
-        background-color: #0f4364;
+        background-color: #10202a;
         color: #444;
         cursor: pointer;
         padding: 18px;
@@ -49,18 +49,18 @@
         border: none;
         text-align: left;
         outline: none;
-        font-size: 15px;
+        font-size: 14px;
         transition: 0.4s;
       }
       
       .accordion:hover {
-        background-color: #0d3853; 
+        background-color: #091218; 
       }
       
       .panel {
         padding: 0 18px;
         display: none;
-        background-color: #0d3853;
+        background-color: #091218;
         overflow: hidden;
         color: white;
       }
