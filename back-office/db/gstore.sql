@@ -1,6 +1,6 @@
 -- MariaDB dump 10.17  Distrib 10.4.8-MariaDB, for Linux (x86_64)
 --
--- Host: localhost    Database: gstore
+-- Host: localhost    Database: GSTORE
 -- ------------------------------------------------------
 -- Server version	10.4.8-MariaDB
 
@@ -38,7 +38,7 @@ CREATE TABLE `Game` (
 
 LOCK TABLES `Game` WRITE;
 /*!40000 ALTER TABLE `Game` DISABLE KEYS */;
-INSERT INTO `Game` VALUES (1,'Moto-cross 4','public/images/jeux/mt.jpg','Sport, Course','public/videos/moto.mp4'),(2,'Dark Soul 3','public/images/jeux/ds.jpg','Aventure','public/videos/ds.mp4'),(3,'PUBG Mobile','public/images/jeux/pubg.jpg','Action, Strategie','public/videos/pubg.mp4'),(4,'Modern Warfare 3','public/images/jeux/cod.jpg','Action','public/videos/cod.mp4'),(5,'PES 2019','public/images/jeux/pes.jpg','Sport','public/videos/pes.mp4'),(6,'Far Cry 5','public/images/jeux/far.jpg','Action',''),(7,'Blur','public/images/jeux/blur.png','Course','public/videos/blur.mp4'),(8,'GTA 5','public/images/jeux/gta.jpg','Action, Aventure','public/videos/gta.mp4'),(9,'Burnout 3','public/images/jeux/bur.jpg','Course',''),(10,'NBA 2K20','public/images/jeux/nba.jpg','Sport',''),(11,'Fortnite','public/images/jeux/for.jpg','Action, Strategie',''),(12,'Euro Truck Simulator 2','public/images/jeux/euro.jpg','Simulation, Aventure','');
+INSERT INTO `Game` VALUES (1,'Moto-cross 4','public/images/jeux/mt.jpg','Sport, Course','public/videos/moto.mp4'),(2,'Dark Soul 3','public/images/jeux/ds.jpg','Aventure','public/videos/ds.mp4'),(3,'PUBG Mobile','public/images/jeux/pubg.jpg','Action, Strategie','public/videos/pubg.mp4'),(4,'Modern Warfare 3','public/images/jeux/cod.jpg','Action','public/videos/cod.mp4'),(5,'PES 2019','public/images/jeux/pes.jpg','Sport','public/videos/pes.mp4'),(6,'Far Cry 5','public/images/jeux/far.jpg','Action','public/videos/farcry.mp4'),(7,'Blur','public/images/jeux/blur.png','Course','public/videos/blur.mp4'),(8,'GTA 5','public/images/jeux/gta.jpg','Action, Aventure','public/videos/gta.mp4'),(9,'Burnout 3','public/images/jeux/bur.jpg','Course','public/videos/burn.mp4'),(10,'NBA 2K20','public/images/jeux/nba.jpg','Sport','public/videos/nba.mp4'),(11,'Fortnite','public/images/jeux/for.jpg','Action, Strategie','public/videos/fortnite.mp4'),(12,'Euro Truck Simulator 2','public/images/jeux/euro.jpg','Simulation, Aventure','public/videos/euro.mp4');
 /*!40000 ALTER TABLE `Game` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -59,7 +59,7 @@ CREATE TABLE `Membre` (
   `is_connected` tinyint(4) NOT NULL DEFAULT 0,
   `Admin` tinyint(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `Membre` (
 
 LOCK TABLES `Membre` WRITE;
 /*!40000 ALTER TABLE `Membre` DISABLE KEYS */;
-INSERT INTO `Membre` VALUES (1,'BAKARY','Gaetan Jonathan','gaetan@esti.mg','0325398496','7c222fb2927d828af22f592134e8932480637c0d',0,0);
+INSERT INTO `Membre` VALUES (9,'AAA','Aaaaa','aa@aaa.aa','0325398496','e93b4e3c464ffd51732fbd6ded717e9efda28aad',0,0),(10,'BAKARY','Gaetan Jonathan','gaetan@esti.mg','0325398496','7c222fb2927d828af22f592134e8932480637c0d',0,0);
 /*!40000 ALTER TABLE `Membre` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -81,4 +81,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-22 23:13:40
+-- Dump completed on 2019-10-23 19:07:47
