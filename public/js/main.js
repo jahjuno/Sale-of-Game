@@ -180,7 +180,7 @@ $(function() {
 		
 function search_game(value){
 	window.location = '#' + value;
-	$("[id='" + value + "']").find('h6>a').animate({color:'red', fontSize:'25px'}, 500, function (){
+	$("[id='" + value + "']").find('h6>a').animate({color:'red', fontSize:'30px'}, 500, function (){
 		$(this).animate({color:'#212529', fontSize:'17.6px'}, 500)
 	});	
 }
