@@ -7,6 +7,7 @@
                 <link rel="stylesheet" href="../public/css/bootstrap.min.css">
                 <link rel="stylesheet" href="../public/css/style.css">
                 <link rel="stylesheet" href="../public/css/cycle_menstruel.css">
+                <script src="../public/js/jquery.min.js"></script>
                 
         </head>
 <body>
@@ -23,8 +24,8 @@
                                         <input type="date" name="premier_j" id="premier_j1"><br>
                                         <label id="lab_titre_one">Entrer la durée de votre cycle : </label><br>
                                         <input type="number" placeholder="exemple: 22" id="jour_cycle"><br><br>
-                                        <button type="submit" class="btn btn-info me" onclick="calucle_Ovulation2()">Envoyer</button><br>
-                                        <p id="resulat1"> </p>
+                                        <button type="button" class="btn btn-info me" onclick="calucle_Ovulation2()">Envoyer</button><br>
+                                        <p id="resultat1"></p>
                                 </form>
                         </div>
 
@@ -34,14 +35,16 @@
                                         <input type="date" name="premier_j" id="premier_j"><br>
                                         <label class="lab_titre_two">Date de la prochaine règle:</label><br>
                                         <input type="date" name="prmier_j" id="deuxieme_j"><br><br>
-                                        <button type="submit" class="btn btn-info me" onclick="calucle_Ovulation()">Envoyer</button><br>
-                                        <p id="resultat2"> </p>
+                                        <button type="button" class="btn btn-info me" onclick="calucle_Ovulation()">Envoyer</button><br>
+                                        <p id="resultat2"></p>
                                 </form>
                         </div>
                         
                 </div>
         </span>
+        
 <script src="../public/js/cycle_menstruel.js"></script>
+
  
 </body>
 </html>
