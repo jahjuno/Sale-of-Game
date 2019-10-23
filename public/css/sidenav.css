@@ -1,4 +1,4 @@
-.sidenav {
+      .sidenav {
         height: 100%;
         width: 0;
         position: fixed;
@@ -9,6 +9,7 @@
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
+        padding-bottom: 60px;
       }
       
       .sidenav a {
@@ -53,9 +54,9 @@
         transition: 0.4s;
       }
       
-      .accordion:hover {
-        background-color: #091218; 
-      }
+      /*.accordion:hover {
+        background-color: #091218;
+      }*/
       
       .panel {
         padding: 0 18px;
@@ -63,4 +64,34 @@
         background-color: #091218;
         overflow: hidden;
         color: white;
+      }
+
+      .fa-css3{
+        border:1.5px solid #fff  !important;
+        padding: 15px;
+        border-radius: 50px !important;
+      }
+      .fa-css3:hover{
+       background-color: #fff !important;
+       color:#091218 !important;
+      }
+
+      .fa-js{
+        border:1.5px solid #fff  !important;
+        padding: 16px 14px;
+        border-radius: 50px !important;
+      }
+      .fa-js:hover{
+        background-color: #fff !important;
+        color:#091218 !important;
+      }
+
+      .fa-html5{
+        border:1.5px solid #fff  !important;
+        padding: 15px 16px;
+        border-radius: 50px !important;
+      }
+      .fa-html5:hover{
+        background-color: #fff !important;
+        color:#091218 !important;
       }
