@@ -138,3 +138,8 @@
         height: 465px;
         margin-bottom: -3%;
 }
+
+footer {
+        padding: 40px 0;
+        background-color: #030d11;
+}
