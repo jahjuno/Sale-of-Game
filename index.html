@@ -100,6 +100,47 @@
                 </div>
             </section>
 
+            <!--CONTACT START-->
+            <main class="page projects-page">
+                <section class="portfolio-block projects-cards">
+                    <div class="container">
+                            <div class="heading">
+                                    <h2 id="game" >Entrer en contact</h2>
+                            </div>
+                        <div class="row">
+                            <div class="offset-md-1 col-md-10">
+                                <div class="contact-info mb-md50">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-50">
+                                            <div class="item"> <span class="icon et-phone"></span>
+                                                <div class="cont">
+                                                    <p>+261320025500</p>
+                                                    <h6>Téléphone</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-50">
+                                            <div class="item"> <span class="icon et-envelope"></span>
+                                                <div class="cont">
+                                                    <p>f-society@gmail.com</p>
+                                                    <h6>Email</h6> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="item"> <span class="icon et-map"></span>
+                                                <div class="cont">
+                                                    <p>Ambatoroka, Tananarive</p>
+                                                    <h6>Adresse</h6> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!--CONTACT END-->
+
             
             <div id="play" class="modal fade">
                 <div class="modal-dialog modal-login">
@@ -202,34 +243,35 @@
             </div>
 
 
-    <div id="acheter" class="modal fade">
-        <div class="modal-dialog modal-login">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" style="font-weight: bold;">Achat d'un jeu</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-                <div id="sary" class="col-md-6 col-lg-4">
-                    <div class="card border-0"><a href="#"><img src="" style="width: 425px; margin-left: 20px;" alt="Card Image" class=""></a>
+            <div id="acheter" class="modal fade">
+                <div class="modal-dialog modal-login">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="font-weight: bold;">Achat d'un jeu</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div id="sary" class="col-md-6 col-lg-4">
+                            <div class="card border-0"><a href="#"><img src="" style="width: 425px; margin-left: 20px;" alt="Card Image" class=""></a></div>
+                        </div>
+                        <div class="modal-body">
+                            <form id="se_connecter" class="farany">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="mail" placeholder="Email" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="password" placeholder="Mot de passe" required="required">
+                                </div>
+                                <div>
+                                <p class="alert-danger" style="text-align: center !important" name="erreur"></p>
+                                </div>
+                                <div class="bouton form-group">
+                                    <input type="button" onclick="verifie_password($(this).parents('form'))" name="valider_se_connecter"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="Se connecter">
+                                    <label style="color:red;font-size:11;text-align: center"></label>
+                                </div>
+                            </form>
+                            <p class="forgetpass hint-text small"><a href="#" OnClick="window.location='index.php?action=mot_de_passe_oubliee'">Mot de passe oublié?</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="modal-body">
-                    <form id="se_connecter" class="farany">
-                        <div class="form-group">
-                            <input type="email" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="mail" placeholder="Email" required="required">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" name="password" placeholder="Mot de passe" required="required">
-                        </div>
-                        <div>
-                          <p class="alert-danger" style="text-align: center !important" name="erreur"></p>
-                        </div>
-                        <div class="bouton form-group">
-                            <input type="button" onclick="verifie_password($(this).parents('form'))" name="valider_se_connecter"  style="border-radius: 25px !important;" class="btn btn-primary btn-block btn-lg" value="Se connecter">
-                            <label style="color:red;font-size:11;text-align: center"></label>
-                        </div>
-                    </form>
-                    <p class="forgetpass hint-text small"><a href="#" OnClick="window.location='index.php?action=mot_de_passe_oubliee'">Mot de passe oublié?</a></p>
                 </div>
             </div>
 
