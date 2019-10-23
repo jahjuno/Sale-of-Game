@@ -1,3 +1,55 @@
+@font-face {
+	font-family: 'et-line';
+	src:url(../fonts/icons/et-line.eot);
+	src:url(../fonts/icons/icons/et-lined41d.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/icons/et-line.woff) format('woff'),
+		url(../fonts/icons/et-line.ttf) format('truetype'),
+		url(../fonts/icons/et-line.svg#et-line) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-env{
+        text-align: center !important;
+}
+.icon-map{
+        text-align: right !important;
+}
+.icon-tel{
+        text-align: left !important;
+}
+
+.pcontact{
+        text-transform: uppercase;
+}
+
+
+.et-envelope,.et-map{
+        font-size: 30px;
+        background: linear-gradient(to bottom, rgb(252, 87, 42) 0%, rgb(249,48, 105) 100%);
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px
+}
+
+
+.et-phone{
+        font-size: 30px;
+        background: linear-gradient(to bottom, rgb(252, 87, 42) 0%, rgb(249,48, 105) 100%);
+        color: white;
+        padding: 18px 22px;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px
+}
+
+.entcont{
+        color: rgb(249,48, 105) !important;
+}
+
+
 .nav-link{
         font-weight: normal !important;
 }
@@ -73,14 +125,11 @@
         border-color: #fff !important;
         display: inline !important;
 }
-.fa-search{
-        display: inline !important;
-        display: inline !important;
-        cursor: pointer !important;
-}
+
 .form-newsletter{position:relative;display:block;margin:0px auto;padding:0;width:100%;max-width:500px}
 
 .form-newsletter input[type=text]{padding:12px 100px 12px 20px;width:100%;border:none;outline:0;border-radius:35px;background:#fff;color:#555;box-shadow:2px 4px 30px rgba(80,80,80,.1)}
 
-.form-newsletter [type=button]{position:absolute;top:4px;right:4px;margin:0;padding:8px 20px;border:none;outline:0;border-radius:35px;color:#fff;cursor:pointer;background:#0e0238;}
+.form-newsletter [type=button]{position:absolute;top:4px;right:4px;margin:0;padding:8px 20px;border:none;outline:0;border-radius:35px;color:#fff;cursor:pointer;background:#031825;}
+
 
