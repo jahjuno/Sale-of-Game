@@ -97,10 +97,28 @@ function verifie_password(obj){
 			);
 			
 			function feed_back(rep){
-				if (rep == 1){
+				if (/^03[2349]{1}[0-9]{7}$/.test(rep)){
+					switch (rep.slice(0,3)) {
+						case '032':
+							ops = 'Orange Money' ;
+							break;
+
+						case '033':
+							ops = 'Airtel Money';
+							break;
+						
+						case '034':
+							ops = 'Mvola';
+							break;
+
+						default:
+							ops = 'Mobile Money';
+
+					};
+
 					error.text('');
 					html = "<div class='form-group'>";
-					html += '<input type="text" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token Orange Money" required="required">';
+					html += `<input type="text" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token ${ops}" required="required">`;
 					html += "</div>";
 					obj.find(".forgetpass").remove(); // fafana le soratra mdp oublié iny
 					but = obj.find(" .bouton"); // selectionneko le button
@@ -208,10 +226,3 @@ function closeAndPauseEvent(){
 		});
 	});
 }
-
-
-$('zavatra').change(function (){
-	if ($(this).val().length >= 3){
-		alert('ok je peux rechercher');
-	}
-});

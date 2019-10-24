@@ -34,7 +34,8 @@ class Query_bdd extends Connect_bdd{
             return "Mot de passe Incorrecte";
         }
         else{
-            return true;
+            return $this->info_user($mail)[0][4]; 
+            // ceci retourne un tableau donc je recupere l indice du numero 
         }
     }
 
@@ -48,5 +49,15 @@ class Query_bdd extends Connect_bdd{
 
     return  json_encode($all_games);
   }
+
+
+  public function info_user($mail){
+    $bdd = $this->dbconnect();
+    $user = $bdd->query("SELECT * FROM Membre WHERE Mail='$mail' ");
+
+    return $user->fetchall();
+  }
 }
+
+
 ?>

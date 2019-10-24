@@ -29,5 +29,4 @@ if (isset($_POST['gamelist'])){
   echo $query->all_games();
 }
 
-
 ?>
