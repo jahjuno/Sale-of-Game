@@ -98,7 +98,6 @@ function verifie_password(obj){
 			
 			function feed_back(rep){
 				if (rep == 1){
-					// $("#connecter").modal('hide');
 					error.text('');
 					html = "<div class='form-group'>";
 					html += '<input type="text" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token Orange Money" required="required">';
@@ -108,7 +107,7 @@ function verifie_password(obj){
 					obj.append(html);
 					obj.append(but);
 					obj.find(' input[type=button]').attr('value', 'Confirmer Achat');
-					obj.find(' input[type=button]').removeAttr('onclick');
+					obj.find(' input[type=button]').attr('onclick', 'processAchat(' + obj + ')');
 					mail.attr('disabled', 'disabled');
 					password.attr('disabled', 'disabled');
 					obj.find(" .modal-title").html("Acheter le Jeu");
@@ -121,12 +120,17 @@ function verifie_password(obj){
 		else{
 			error.text("Ce mail n'est pas valide: " + mail.val());
 		}
-		
-		
+				
+}
+
+
+function processAchat(obj){
+	alert(obj);
 }
 
 
 $(function() {
+
 	$.post(
 		'back-office/script/service.php',
 		{
@@ -174,8 +178,11 @@ $(function() {
 		buy.remove();
 		Mmod.remove();
 		mod.remove();
+		closeAndPauseEvent();
 	}
+
 });
+
 
 		
 function search_game(value){
@@ -189,5 +196,15 @@ function search_game(value){
 function closeAndPause(){
 	$(".videoplay").each(function(){
 		$(this).get(0).pause();
+	});
+}
+
+
+function closeAndPauseEvent(){
+	$('.playvideo').each(function (){
+		alert($(this).attr('id'));
+		$(this).on('hide.bs.modal', function (){
+			closeAndPause();
+		});
 	});
 }
