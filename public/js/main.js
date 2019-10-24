@@ -158,7 +158,7 @@ async function processAchat(event){
 		await sleep(4000);
 		event.data.objet.parents('.modal').modal('hide');
 		$('#successdown').find('h4').text($('#successdown').find('h4').text() + game);
-		$('#successdown').find('.text-center').text($('#successdown').find('.text-center').text() + mail);
+		$('#successdown').find('.mailsend').html($('#successdown').find('.mailsend').text() + `<strong>${mail}</strong>`);
 		$('#successdown').modal('show');
 	}
 }
