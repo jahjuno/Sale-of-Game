@@ -1,20 +1,21 @@
-.sidenav {
+      .sidenav {
         height: 100%;
         width: 0;
         position: fixed;
         z-index: 1;
-        top: 10%;
+        top: 15%;
         left: 0;
-        background-color: #0f4364;
+        background-color: #10202a;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
+        padding-bottom: 60px;
       }
       
       .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 16px !important;
+        font-size: 15px !important;
         color: #fff;
         display: block;
         transition: 0.3s;
@@ -41,7 +42,7 @@
 
 
       .accordion {
-        background-color: #0f4364;
+        background-color: #10202a;
         color: #444;
         cursor: pointer;
         padding: 18px;
@@ -49,18 +50,48 @@
         border: none;
         text-align: left;
         outline: none;
-        font-size: 15px;
+        font-size: 14px;
         transition: 0.4s;
       }
       
-      .active, .accordion:hover {
-        background-color: #0d3853; 
-      }
+      /*.accordion:hover {
+        background-color: #091218;
+      }*/
       
       .panel {
         padding: 0 18px;
         display: none;
-        background-color: #0d3853;
+        background-color: #091218;
         overflow: hidden;
         color: white;
+      }
+
+      .fa-css3{
+        border:1.5px solid #fff  !important;
+        padding: 15px;
+        border-radius: 50px !important;
+      }
+      .fa-css3:hover{
+       background-color: #fff !important;
+       color:#091218 !important;
+      }
+
+      .fa-js{
+        border:1.5px solid #fff  !important;
+        padding: 16px 14px;
+        border-radius: 50px !important;
+      }
+      .fa-js:hover{
+        background-color: #fff !important;
+        color:#091218 !important;
+      }
+
+      .fa-html5{
+        border:1.5px solid #fff  !important;
+        padding: 15px 16px;
+        border-radius: 50px !important;
+      }
+      .fa-html5:hover{
+        background-color: #fff !important;
+        color:#091218 !important;
       }
