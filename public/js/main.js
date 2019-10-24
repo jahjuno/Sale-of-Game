@@ -124,9 +124,8 @@ function verifie_password(obj){
 
 					error.text('');
 					html = "<div class='form-group'>";
-					html += `<input type="text" class="form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token ${ops}" required="required">`;
+					html += `<input type="text" class="token form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token ${ops} (6 chiifres)" required="required">`;
 					html += "</div>";
-					obj.find(".forgetpass").remove(); // fafana le soratra mdp oublié iny
 					but = obj.find(" .bouton"); // selectionneko le button
 					obj.append(html);
 					obj.append(but);
@@ -150,15 +149,18 @@ function verifie_password(obj){
 
 
 async function processAchat(event){
-	mail = event.data.mail;
-	game = event.data.prod;
-	html = `<div class='form-group'> <img style="margin-left: 46%; margin-right: 48%" src='public/images/loading.gif' alt="chargement..."/> </div>`;
-	event.data.objet.parent().after(html);
-	await sleep(4000);
-	event.data.objet.parents('.modal').modal('hide');
-	$('#successdown').find('h4').text($('#successdown').find('h4').text() + game);
-	$('#successdown').find('.text-center').text($('#successdown').find('.text-center').text() + mail);
-	$('#successdown').modal('show');
+	val = event.data.objet.parents('form').find('.token').val();
+	if (/^[0-9]{6}$/.test(val)){
+		mail = event.data.mail;
+		game = event.data.prod;
+		html = `<div class='form-group'> <img style="margin-left: 46%; margin-right: 48%" src='public/images/loading.gif' alt="chargement..."/> </div>`;
+		event.data.objet.parent().after(html);
+		await sleep(4000);
+		event.data.objet.parents('.modal').modal('hide');
+		$('#successdown').find('h4').text($('#successdown').find('h4').text() + game);
+		$('#successdown').find('.text-center').text($('#successdown').find('.text-center').text() + mail);
+		$('#successdown').modal('show');
+	}
 }
 
 
