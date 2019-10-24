@@ -4,6 +4,12 @@ function capitale(texte) {
 }
 
 
+function sleep(ms) {
+	// fonction pour faire une petite  sleep 
+	return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+
 function inscription(){
 	
 	let nom = $("#inscrire input[name=nom]"); // alaina le champ ana texte ampidirana anarana
@@ -125,7 +131,8 @@ function verifie_password(obj){
 					obj.append(html);
 					obj.append(but);
 					obj.find(' input[type=button]').attr('value', 'Confirmer Achat');
-					obj.find(' input[type=button]').attr('onclick', 'processAchat(' + obj + ')');
+					obj.find(' input[type=button]').removeAttr('onclick');
+					obj.find(' input[type=button]').click({mail: mail.val(), prod: obj.parents('.modal').find('img').attr('alt'), objet: obj.find(' input[type=button]')}, processAchat);
 					mail.attr('disabled', 'disabled');
 					password.attr('disabled', 'disabled');
 					obj.find(" .modal-title").html("Acheter le Jeu");
@@ -142,8 +149,16 @@ function verifie_password(obj){
 }
 
 
-function processAchat(obj){
-	alert(obj);
+async function processAchat(event){
+	mail = event.data.mail;
+	game = event.data.prod;
+	html = `<div class='form-group'> <img style="margin-left: 46%; margin-right: 48%" src='public/images/loading.gif' alt="chargement..."/> </div>`;
+	event.data.objet.parent().after(html);
+	await sleep(4000);
+	event.data.objet.parents('.modal').modal('hide');
+	$('#successdown').find('h4').text($('#successdown').find('h4').text() + game);
+	$('#successdown').find('.text-center').text($('#successdown').find('.text-center').text() + mail);
+	$('#successdown').modal('show');
 }
 
 
@@ -190,6 +205,7 @@ $(function() {
 			buyTmp = buy.clone();
 			buyTmp.attr('id', 'acheter' + dataP[0][i][0]);
 			buyTmp.find('img').attr('src', dataP[0][i][2]);
+			buyTmp.find('img').attr('alt', dataP[0][i][1]);
 
 			buy.after(buyTmp);
 		}
