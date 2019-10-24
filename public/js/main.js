@@ -181,6 +181,7 @@ $(function() {
 		closeAndPauseEvent();
 	}
 
+
 });
 
 
@@ -207,3 +208,10 @@ function closeAndPauseEvent(){
 		});
 	});
 }
+
+
+$('zavatra').change(function (){
+	if ($(this).val().length >= 3){
+		alert('ok je peux rechercher');
+	}
+});
