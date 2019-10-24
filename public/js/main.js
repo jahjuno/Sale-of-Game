@@ -202,7 +202,6 @@ function closeAndPause(){
 
 function closeAndPauseEvent(){
 	$('.playvideo').each(function (){
-		alert($(this).attr('id'));
 		$(this).on('hide.bs.modal', function (){
 			closeAndPause();
 		});
