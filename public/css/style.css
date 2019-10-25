@@ -71,7 +71,10 @@
         height: 700px;
 }
 
-
+#price{
+        color:#083344 !important;
+        text-align: right !important;
+}
 
 .fa-heart{
         color: rgb(207, 15, 15) !important;
