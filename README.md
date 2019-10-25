@@ -8,5 +8,7 @@ Sur ce site, vous pouvez achéter des jeux facilement et regarder des gameplay a
 ## Technologies
 <img align="center" src="https://github.com/jahjuno/Sale-of-Game/blob/master/public/images/technologies.png">
 
+## VISUALISATION
+[[embed url=https://www.youtube.com/watch?v=c-K2ElOCM2I&feature=youtu.be]]
 
->> Copyright @RSI-Society || Tous Droits réservés
+> Copyright @RSI-Society || Tous Droits réservés
