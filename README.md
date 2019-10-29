@@ -6,7 +6,10 @@ G-Store est un site de vente de jeux en ligne développé par [RSI-Society](http
 Sur ce site, vous pouvez achéter des jeux facilement et regarder des gameplay avant de télécharger.
 
 ## Technologies
-<img align="center" src="https://github.com/jahjuno/Sale-of-Game/blob/master/public/images/technologies.png">
+- HTML ( Corps du site)
+- CSS   ( les mises en formes et animations)
+- JavaScript  (les animations et le backend)
+- PHP (requête base de donnée)
 
 ## Visualisation
 <img align="center" src="https://github.com/jahjuno/Sale-of-Game/blob/master/public/images/introduction.gif">
@@ -20,7 +23,7 @@ Sur ce site, vous pouvez achéter des jeux facilement et regarder des gameplay a
 
 <img align="center" src="https://scontent.ftnr1-1.fna.fbcdn.net/v/t1.0-1/c0.7.160.160a/p160x160/70915215_1101650060031768_2165901172139884544_n.jpg?_nc_cat=109&_nc_eui2=AeG-BAZvZyPFs2rKwx6hnsHXJzgIzOUkqknbXrtnirlRZnMUcKvAkAuh_ARLdkWoSi59po6QPUgcR8QsOkaZbBFKxmLqUwl20mW1p4NB0WLBDg&_nc_oc=AQnViA_OMeXpBtqRIPZNW_4tDYy5wWy69ixaj0lfS6SkDMTYFX9GKHGx5HwaiRwuN04&_nc_ht=scontent.ftnr1-1.fna&oh=5b2a419dea178c2938e50dee3255f3c7&oe=5E640ED9">
 
-> When you feel like giving up, remember *why you held on for so long* in the first place
+> When you feel like giving up, *remember* **why you held on for so long** in the first place
 
 ________________
 
@@ -38,4 +41,4 @@ __________________
 
 <img align="center" src="https://scontent.ftnr1-1.fna.fbcdn.net/v/t1.0-1/c27.0.160.160a/p160x160/44991690_104554680546388_6389584371942162432_n.jpg?_nc_cat=107&_nc_eui2=AeEXvgWxWaimHudt4mxqMzaw2URQGSGww3iL3YOQKPhhajziDoWcfDKoqFbMx-M4CT-CEe4UPQcrhwYxVSkDR9rN3oyMO4gPPbURopTAcDQOgA&_nc_oc=AQnJ8MRY6m3ZuMxcsigTNbdadY7qmTfJ_rbt9L_5GIp-RWd_lOi_Z-4zvdAxGdw2ZiI&_nc_ht=scontent.ftnr1-1.fna&oh=e067543dd2d4167a082dd35cb535b91d&oe=5E5DA2CF">
 
-> Tu sais jamais ***à quel point tu es fort*** jusqu'au jour où ***être fort reste ta seule option***.
+> Tu ne sais jamais ***à quel point tu es fort*** jusqu'au jour où ***être fort reste ta seule option***.
