@@ -38,4 +38,4 @@ __________________
 
 <img align="center" src="https://scontent.ftnr1-1.fna.fbcdn.net/v/t1.0-1/c27.0.160.160a/p160x160/44991690_104554680546388_6389584371942162432_n.jpg?_nc_cat=107&_nc_eui2=AeEXvgWxWaimHudt4mxqMzaw2URQGSGww3iL3YOQKPhhajziDoWcfDKoqFbMx-M4CT-CEe4UPQcrhwYxVSkDR9rN3oyMO4gPPbURopTAcDQOgA&_nc_oc=AQnJ8MRY6m3ZuMxcsigTNbdadY7qmTfJ_rbt9L_5GIp-RWd_lOi_Z-4zvdAxGdw2ZiI&_nc_ht=scontent.ftnr1-1.fna&oh=e067543dd2d4167a082dd35cb535b91d&oe=5E5DA2CF">
 
-> Tu sais jamais *à quel point tu es fort* jusqu'au jour où *être fort reste ta seule option*.
+> Tu sais jamais ***à quel point tu es fort*** jusqu'au jour où ***être fort reste ta seule option***.
