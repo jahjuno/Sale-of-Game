@@ -71,6 +71,13 @@
         height: 700px;
 }
 
+#price{
+        font-weight: bold;
+}
+
+#pricemodal{
+        font-weight: bold;
+}
 
 
 .fa-heart{
