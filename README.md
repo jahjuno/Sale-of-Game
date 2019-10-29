@@ -32,7 +32,7 @@ ________________
 
 <img align="center" src="https://scontent.ftnr1-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/38431607_645068425859121_4886376218120683520_n.jpg?_nc_cat=110&_nc_eui2=AeFZ9DHG0t9Td9ZgidPdyQOLw7HyxvjgNGwF7t4JnrraWyytEHAfv8lmQe0jnX61ilSB-kdt91YgCsWpfG4erJwfny3o8ZzJFLioQlWJXfxr7A&_nc_oc=AQmChTHtmnoGz2ShNF31BcZQFBPh5C6_vYAPRITY8tMJnj5ezdcU0hNbHyyM19zLrgY&_nc_ht=scontent.ftnr1-1.fna&oh=7f2062596f98dd20f6c4f13fdfe8e8cf&oe=5E6417E3">
 
-> **Noone can get out of life alive
+> **Noone can get out of life alive**
 
 __________________
 
