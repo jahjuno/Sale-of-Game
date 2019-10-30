@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'et-line';
+	src:url(../fonts/icons/et-line.eot);
+	src:url(../fonts/icons/icons/et-lined41d.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/icons/et-line.woff) format('woff'),
+		url(../fonts/icons/et-line.ttf) format('truetype'),
+		url(../fonts/icons/et-line.svg#et-line) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-env{
+        text-align: center !important;
+}
+.icon-map{
+        text-align: right !important;
+}
+.icon-tel{
+        text-align: left !important;
+}
+
+.pcontact{
+        text-transform: uppercase;
+}
+
+
+.et-envelope,.et-map{
+        font-size: 30px;
+        background: linear-gradient(to bottom, rgb(252, 87, 42) 0%, rgb(249,48, 105) 100%);
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px
+}
+
+
+.et-phone{
+        font-size: 30px;
+        background: linear-gradient(to bottom, rgb(252, 87, 42) 0%, rgb(249,48, 105) 100%);
+        color: white;
+        padding: 18px 22px;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px
+}
+
+.entcont{
+        color: rgb(249,48, 105) !important;
+}
+
+
+.nav-link{
+        font-weight: normal !important;
+}
+
+
+@keyframes backg {
+        0%{background-image: url("../images/backgrounds/book.jpg")}
+        30%{background-image: url("../images/backgrounds/book.jpg")}
+        100%{background-image: url("../images/backgrounds/vue.jpg")}
+}
+.lanidng-page{
+        animation-name: backg;
+        animation-duration:10s;
+        animation-delay:-1s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
+        background-repeat: unset;
+        background-size: cover;
+        height: 700px;
+}
+
+#price{
+        font-weight: bold;
+}
+
+#pricemodal{
+        font-weight: bold;
+}
+
+
+.fa-heart{
+        color: rgb(207, 15, 15) !important;
+}
+.fa-heart:hover{
+        color:#fff !important;
+}
+.fa-shopping-cart{
+        color: #2ebc4f ;
+}
+.fa-shopping-cart:hover{
+        color: #fff !important;
+}
+.fa-play{
+        color:#1da1f2 !important;
+}
+.btn-outline-danger{
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+}
+.btn-outline-danger:hover{
+        color: #fff !important;
+}
+.btn-outline-success{
+        padding-right: 11px !important;
+        padding-left: 11px !important;
+}
+.btn-outline-success:hover{
+        color: #fff !important;
+}
+.btn-outline-primary{
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+}
+
+.fa-play:hover{
+        color:#fff !important;
+}
+
+.description{
+        width: 100% !important;
+}
+.compte{
+        color: black !important; 
+}
+#game{
+        color: #0ea0ff;
+}
+#rechercher{
+        border-radius: 20px !important;
+        border-color: #fff !important;
+        display: inline !important;
+}
+
+.form-newsletter{position:relative;display:block;margin:0px auto;padding:0;width:100%;max-width:500px}
+
+.form-newsletter input[type=text]{padding:12px 100px 12px 20px;width:100%;border:none;outline:0;border-radius:35px;background:#fff;color:#555;box-shadow:2px 4px 30px rgba(80,80,80,.1)}
+
+.form-newsletter [type=button]{position:absolute;top:4px;right:4px;margin:0;padding:8px 20px;border:none;outline:0;border-radius:35px;color:#fff;cursor:pointer;background:#031825; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);}
+
+.map{}
+.map iframe {
+        width: 100%;
+        height: 465px;
+        margin-bottom: -3%;
+}
+
+footer {
+        padding: 40px 0;
+        background-color: #030d11;
+}
