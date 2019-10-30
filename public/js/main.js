@@ -4,6 +4,23 @@ function capitale(texte) {
 }
 
 
+function makespace(number){
+	let numList =  number.toString().split('');
+	let newnumber = new Array();
+	let j = 0;
+
+	for (let i=0;i<numList.length;i++){
+		if (i%3==0 && i!=0){
+			newnumber[j] = ' ';
+			j++;
+		}
+		newnumber[j] = numList[numList.length - 1 - i];
+		j++;
+	}
+	return newnumber.reverse().join('');
+}
+
+
 function sleep(ms) {
 	// fonction pour faire une petite  sleep 
 	return new Promise(resolve => setTimeout(resolve, ms));
@@ -124,7 +141,7 @@ function verifie_password(obj){
 
 					error.text('');
 					html = "<div class='form-group'>";
-					html += `<input type="text" class="token form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token ${ops} (6 chiifres)" required="required">`;
+					html += `<input type="text" class="token form-control" style="border-right: none !important; border-left: none !important; border-top:none !important; font-family: Poppins !important; font-size: 15px !important;" placeholder="Votre numéro de token ${ops} (4 chiifres)" required="required">`;
 					html += "</div>";
 					but = obj.find(" .bouton"); // selectionneko le button
 					obj.append(html);
@@ -150,7 +167,7 @@ function verifie_password(obj){
 
 async function processAchat(event){
 	val = event.data.objet.parents('form').find('.token').val();
-	if (/^[0-9]{6}$/.test(val)){
+	if (/^[0-9]{4}$/.test(val)){
 		mail = event.data.mail;
 		game = event.data.prod;
 		html = `<div class='form-group'> <img style="margin-left: 46%; margin-right: 48%" src='public/images/loading.gif' alt="chargement..."/> </div>`;
@@ -180,16 +197,16 @@ $(function() {
 		Mmod = $('#play');
 		buy = $('#acheter');
 		mod = $('#game_model');
-		for (i=0;i<dataP[0].length;i++){
+		for (let i=0;i<dataP[0].length;i++){
 			tmp = mod.clone();
 			tmp.attr('id', dataP[0][i][1])
 			tmp.css('display', 'block');
 			tmp.find('img').attr('src', dataP[0][i][2]);
 			tmp.find('h6>a').text(dataP[0][i][1]);
 			tmp.find('#cat').text(dataP[0][i][3]);
+			tmp.find('.price').text(makespace(dataP[0][i][5]) + " Ar");
 			tmp.find('.playB').attr('href','#play'+ dataP[0][i][0]);
 			tmp.find('.achatB').attr('href','#acheter'+ dataP[0][i][0]);
-
 			mod.parent().append(tmp);
 			
 			Mtmp = Mmod.clone();
