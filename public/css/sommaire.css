@@ -13,10 +13,10 @@
         text-align: center !important;
 }
 .icon-map{
-        text-align: right !important;
+        text-align: center !important;
 }
 .icon-tel{
-        text-align: left !important;
+        text-align: center !important;
 }
 
 .pcontact{
@@ -150,3 +150,8 @@ footer {
         padding: 40px 0;
         background-color: #030d11;
 }
+
+@media screen and (max-widht: 768px) {
+        
+}
+
