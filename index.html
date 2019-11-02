@@ -73,10 +73,12 @@
                                         <p class="text-muted card-text"><span id="cat"></span><span class="esc" style="color: #fff !important;">e</span> <span class="price">20000Ar</span></p>
                                         <a class="playB btn btn-outline-primary " data-toggle="modal" role="button" href=""><i class="fa fa-play"></i></a>
                                         <a class="achatB btn btn-outline-success" data-toggle="modal" role="button" href="#"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-danger" role="button" href="#"><i class="fa fa-heart"></i></a>
+                                        <a class="btn btn-outline-danger coeurIcon" role="button" onclick="heartMe($(this).attr('id'))" ><i class="fa fa-heart"></i></a>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class=""></div>
                         </div>
                     </div>
                 </section>
@@ -195,7 +197,7 @@
                                     <p class="text-muted card-text">Action, Stratégie</p>
                                     <p class="pricemodal"> 20000Ar</p>
                                     <a class="achatB btn btn-outline-success" role="button" data-toggle="modal" href="#"><i class="fa fa-shopping-cart"></i></a>
-                                    <a class="btn btn-outline-danger"  role="button" href="#"><i class="fa fa-heart"></i></a>
+                                    <a class="coeurIcon btn btn-outline-danger"  role="button" onclick="heartMe($(this).attr('id'))" ><i class="fa fa-heart"></i></a>
                                 </div>
                             </div>
                         </div>

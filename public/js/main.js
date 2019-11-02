@@ -207,6 +207,7 @@ $(function() {
 			tmp.find('.price').text(makespace(dataP[0][i][5]) + " Ar");
 			tmp.find('.playB').attr('href','#play'+ dataP[0][i][0]);
 			tmp.find('.achatB').attr('href','#acheter'+ dataP[0][i][0]);
+			tmp.find('.coeurIcon').attr('id', 'coeurIcon' + dataP[0][i][0]);
 			mod.parent().append(tmp);
 			
 			Mtmp = Mmod.clone();
@@ -217,6 +218,7 @@ $(function() {
 			Mtmp.find('.text-muted').text(dataP[0][i][3]);
 			Mtmp.find('.pricemodal').text(makespace(dataP[0][i][5]) + " Ar");
 			Mtmp.find('.achatB').attr('href','#acheter'+ dataP[0][i][0]);
+			Mtmp.find('.coeurIcon').attr('id', 'coeurIconModal' + dataP[0][i][0]);
 
 			Mmod.after(Mtmp);
 
@@ -260,5 +262,12 @@ function closeAndPauseEvent(){
 		$(this).on('hide.bs.modal', function (){
 			closeAndPause();
 		});
+	});
+}
+
+
+function heartMe(val){
+	$('#' + val).animate({fontSize: 25, opacity: 2}, 400, function(){
+		$(this).animate({fontSize:14, opacity: 15}, 300);
 	});
 }
