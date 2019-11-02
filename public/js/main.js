@@ -215,6 +215,7 @@ $(function() {
 			Mtmp.find('h6').text(dataP[0][i][1]);
 			Mtmp.find('source').attr('src', dataP[0][i][4]);
 			Mtmp.find('.text-muted').text(dataP[0][i][3]);
+			Mtmp.find('.pricemodal').text(makespace(dataP[0][i][5]) + " Ar");
 			Mtmp.find('.achatB').attr('href','#acheter'+ dataP[0][i][0]);
 
 			Mmod.after(Mtmp);
