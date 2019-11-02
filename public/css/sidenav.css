@@ -54,9 +54,9 @@
         transition: 0.4s;
       }
       
-      /*.accordion:hover {
+      .accordion:hover {
         background-color: #091218;
-      }*/
+      }
       
       .panel {
         padding: 0 18px;
@@ -94,4 +94,14 @@
       .fa-html5:hover{
         background-color: #fff !important;
         color:#091218 !important;
+      }
+
+      .bar{
+        border-radius: 60px;
+        padding: 15px;
+        border: 1px solid #fff;
+      }
+      .bar:hover{
+        color: #10202a;
+        background-color: #fff;
       }
