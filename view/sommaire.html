@@ -25,12 +25,18 @@
         <body>
     
             <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" id="accueil">
-                <div class="container"><a class="navbar-brand logo" onclick="openNav()" style="font-size: 35px; cursor: pointer;" ><i class="fa fa-bars" style="font-size: 35px !important;"></i> Sommaire</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="container"><a class="navbar-brand logo" onclick="openNav()" style="font-size: 35px; cursor: pointer;" ><i class="fa fa-list" style="font-size: 35px !important;"></i> Sommaire</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="resolution.html" style="cursor: pointer"><i class="fa fa-circle"></i> Résolution d'équation</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="cycle.html" style="cursor: pointer"><i class="fa fa-circle"></i> Cycle menstruel</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         
         
-            <main id="toppage" class="page lanidng-page" data-scroll-index="0">
+            <main id="toppage" class="page lanidng-page">
                 <section class="portfolio-block block-intro" >
                     <div class="container">
                         <div class="about-me">
@@ -44,11 +50,11 @@
         
             <main class="page projects-page" id="projets" >
                 <section class="portfolio-block projects-cards" >
-                    <div class="container" style="box-shadow: 0 8px 16px 5px rgba(0,0,0,0.2); border-radius: 5px;">
+                    <div class="container" style="box-shadow: 0 8px 16px 5px rgba(0,0,0,0.2); border-radius: 5px;" >
                         <div class="heading">
-                            <h2 id="game" style="padding-top: 2% !important;"><i class="fa fa-html5"></i>HTML</h2>
+                            <h2 id="game" style="padding-top: 2% !important;" data-scroll-index="0"><i class="fa fa-html5"></i>HTML</h2>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold;"> I - Les balises</h4>
+                                <h4 style="color: #185f80df; font-weight: bold;" > I - Les balises</h4>
                             </div>
                             <div class="titre2">
                                 <h6 style="color: rgb(249,48, 105); font-weight: normal; padding-top: 2%;"> 1 - Définition</h6>
@@ -57,7 +63,7 @@
                                 <img src="../public/images/sommaire/liste.png" alt="balise liste">
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> II - Les médias</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="1"> II - Les médias</h4>
                             </div>
                             <div class="titre2">
                                 <h6 style="color: rgb(249,48, 105); font-weight: normal; padding-top: 2%;"> 1 - Image: < img ></h6>
@@ -75,14 +81,14 @@
                                 <img src="../public/images/sommaire/video.png" alt="balise video">
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> III - Le tableau</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="2"> III - Le tableau</h4>
                             </div>
                             <div class="titre2">
                                 <p style="padding-bottom: 1%;">La balise < table > permet de créer un tableau. Il faudra utiliser la balise < tr > pour créer une nouvelle ligne dans le tableau. Entre les balises < tr > et < /tr > nous mettrons nos cellules grâce aux balises < td >.</p>
                                 <img src="../public/images/sommaire/tableau.png" alt="tableau html">
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> IV - Les liens</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="3"> IV - Les liens</h4>
                             </div>
                             <div class="titre2">
                                 <h6 style="color: rgb(249,48, 105); font-weight: normal; padding-top: 2%;"> 1 - Ancre</h6>
@@ -105,9 +111,9 @@
                     </div>
                     <div class="container" style="margin-top: 7% !important;border-radius: 5px; box-shadow: 0 8px 16px 5px rgba(0,0,0,0.2)">
                         <div class="heading" >
-                            <h2 id="game" style="padding-top: 2% !important;" ><i class="fa fa-css3"></i>CSS</h2>
+                            <h2 id="game" style="padding-top: 2% !important;" data-scroll-index="4"><i class="fa fa-css3"></i>CSS</h2>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold;"> I - Les sélecteurs</h4>
+                                <h4 style="color: #185f80df; font-weight: bold;" > I - Les sélecteurs</h4>
                             </div>
                             <div class="titre2">
                                 <h6 style="color: rgb(249,48, 105); font-weight: normal; padding-top: 2%;"> 1 - Le sélecteur de tout: * </h6>
@@ -153,7 +159,7 @@
                                 <p > Il sélectionne n'importe quel élément p, du moment qu'ils suivent un ul.</p>
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> II - Les pseudos-classes</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="5"> II - Les pseudos-classes</h4>
                             </div>
                             <div class="titre2">
                                 <h6 style="color: rgb(249,48, 105); font-weight: normal; padding-top: 2%;"> 1 - Le pseudo-classe link et visited: x:link x:visited</h6>
@@ -186,7 +192,7 @@
                                 <p > Permet de cibler des éléments spécifiques d'une liste</p>
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> III - Les pseudos-éléments</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="6"> III - Les pseudos-éléments</h4>
                                 <p>Nous pouvons utiliser des pseudo-éléments (identifiés par ::) pour mettre en forme des parties d'un élément, comme la première ligne ou la première lettre. </p>
                             </div>
                             <div class="titre2">
@@ -200,7 +206,7 @@
                                 <p > Le pseudo-élément ::first-line met en forme la première ligne de l'élément, et elle seule.</p>
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> IV - La mise en forme</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="7"> IV - La mise en forme</h4>
                                 <p>La mise en forme c'est le fait d'appliquer des propriétés CSS aux éléments HTML. Ci-dessous un exemple sur un bouton.</p>
                             </div>
                             <div class="titre2">
@@ -213,7 +219,7 @@
                                 <img src="../public/images/sommaire/resb.png" alt="resb" style="border: 2px solid crimson; border-radius:5px;">
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> V - Le responsive design</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="8"> V - Le responsive design</h4>
                                 <p>Le responsive web design est une façon de concevoir un site web pour que son contenu s'adapte automatiquement à la largeur et/ou à la hauteur de l'écran qui le visionne.</p>
                             </div>
                             <div class="titre2">
@@ -237,9 +243,9 @@
                     </div>
                     <div class="container" style="box-shadow: 0 8px 16px 5px rgba(0,0,0,0.2); margin-top: 7% !important; border-radius: 5px;">
                         <div class="heading">
-                            <h2 id="game" style="padding-top: 2% !important;"><span class="fa fa-js" style="font-weight: bold; cursor: pointer;">JS</span> Javascript</h2>
+                            <h2 id="game" style="padding-top: 2% !important;" data-scroll-index="9"><span class="fa fa-js" style="font-weight: bold; cursor: pointer;">JS</span> Javascript</h2>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> I - La sélection</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" > I - La sélection</h4>
                             </div>
                             <div class="titre2">
                                 <h6 style="color: rgb(249,48, 105); font-weight: normal; padding-top: 2%;"> 1 - getElementById()</h6>
@@ -257,7 +263,7 @@
                                 <img src="../public/images/sommaire/jsclass.png" alt="jsclass">
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> II - Les instructions conditionnelles</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="10"> II - Les instructions conditionnelles</h4>
                             </div>
                             <div class="titre2">
                                 <h6 style="color: rgb(249,48, 105); font-weight: normal; padding-top: 2%;"> 1 - L'instruction if...else</h6>
@@ -275,7 +281,7 @@
                                 <img src="../public/images/sommaire/exp.png" alt="exp">
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> III - Les boucles</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="11"> III - Les boucles</h4>
                             </div>
                             <div class="titre2">
                                 <h6 style="color: rgb(249,48, 105); font-weight: normal; padding-top: 2%;"> Exemple : La boucle while</h6>
@@ -283,7 +289,7 @@
                                 <img src="../public/images/sommaire/boucle.png" alt="boucle">
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> IV - Jquery</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="12"> IV - Jquery</h4>
                                 <p> jQuery est un framework Javascript sous licence libre qui permet de faciliter des fonctionnalités communes de Javascript. L'utilisation de cette bibliothèque permet de gagner du temps de développement lors de l'interaction sur le code HTML d'une page web, l'AJAX ou la gestion des évènements.</p>
                             </div>
                             <div class="titre2">
@@ -301,7 +307,7 @@
                                 <img src="../public/images/sommaire/nouveaujq.png" alt="nouveau">
                             </div>
                             <div class="titre1">
-                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;"> V - AJAX</h4>
+                                <h4 style="color: #185f80df; font-weight: bold; padding-top: 4%;" data-scroll-index="13"> V - AJAX</h4>
                             </div>
                             <div class="titre2">
                                 <p> AJAX est l'acronyme d'Asynchronous JavaScript And XML, autrement dit JavaScript Et XML Asynchrones. AJAX n'est ni une technologie ni un langage de programmation ; AJAX est un concept de programmation Web reposant sur plusieurs technologies comme le JavaScript et le XML – d'où le nom AJAX.</p>
@@ -317,7 +323,7 @@
 
 
             <!--CONTACT START-->
-            <main class="page projects-page" data-scroll-index="2">
+            <main class="page projects-page">
                 <section class="portfolio-block projects-cards">
                     <div class="container">
                             <div class="heading">
@@ -339,7 +345,7 @@
                                         <div class="col-md-4 mb-50 icon-env">
                                             <div class="item"> <span class="icon et-envelope"></span>
                                                 <div class="cont">
-                                                    <p>f-society@gmail.com</p>
+                                                    <p>ambatoroka.fsociety@gmail.com</p>
                                                     <p class="pcontact">Email</p> 
                                                 </div>
                                             </div>
@@ -384,7 +390,7 @@
                                     <a href="https://github.com/RSI-Society"><i class="fa fa-github"></i></a>
                                 </div>
                                 <!-- Copyright -->
-                                <p style="color: #fff !important;">Copyright © 2019 by <a href="https://github.com/RSI-Society">RSI-Society</a></p>
+                                <p style="color: #fff !important;">Copyright © 2019 by <a href="https://github.com/FoyerSociety">F-Society</a></p>
                             </div>
                         </div>
                     </div>
@@ -394,30 +400,28 @@
             
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" class="accordion"><i class="fa fa-html5"></i> HTML</a>
+                <a href="#sommaire.html" data-scroll-nav="0" class="accordion"><i class="fa fa-html5"></i> HTML</a>
                     <div class="panel">
-                        <a><i class="fa fa-key"></i> Les balises</a>
-                        <a><i class="fa fa-key"></i> Les médias</a>
-                        <a><i class="fa fa-key"></i> Le tableau</a>
-                        <a><i class="fa fa-key"></i> Les liens</a>
+                        <a href="#sommaire.html" data-scroll-nav="0"><i class="fa fa-circle"></i> Les balises</a>
+                        <a href="#sommaire.html" data-scroll-nav="1"><i class="fa fa-circle" ></i> Les médias</a>
+                        <a href="#sommaire.html" data-scroll-nav="2"><i class="fa fa-circle" ></i> Le tableau</a>
+                        <a href="#sommaire.html" data-scroll-nav="3"><i class="fa fa-circle"></i> Les liens</a>
                     </div>
-                <a href="#" class="accordion"><i class="fa fa-css3"></i> CSS</a>
+                <a href="#sommaire.html" data-scroll-nav="4" class="accordion"><i class="fa fa-css3"></i> CSS</a>
                     <div class="panel">
-                        <a><i class="fa fa-key"></i> Les selécteurs</a>
-                        <a><i class="fa fa-key"></i> Les pseudos-classes</a>
-                        <a><i class="fa fa-key"></i> Les pseudos-éléments</a>
-                        <a><i class="fa fa-key"></i> La mise en forme</a>
-                        <a><i class="fa fa-key"></i> Le responsive design</a>
+                        <a href="#sommaire.html" data-scroll-nav="4"><i class="fa fa-circle"></i> Les selécteurs</a>
+                        <a href="#sommaire.html" data-scroll-nav="5"><i class="fa fa-circle"></i> Les pseudos-classes</a>
+                        <a href="#sommaire.html" data-scroll-nav="6"><i class="fa fa-circle"></i> Les pseudos-éléments</a>
+                        <a href="#sommaire.html" data-scroll-nav="7"><i class="fa fa-circle"></i> La mise en forme</a>
+                        <a href="#sommaire.html" data-scroll-nav="8"><i class="fa fa-circle"></i> Le responsive design</a>
                     </div>
-                <a href="#" class="accordion"> <span style="font-weight: bold" class="fa fa-js">JS</span> Javascript</a>
+                <a href="#sommaire.html" data-scroll-nav="9" class="accordion"> <span style="font-weight: bold" class="fa fa-js">JS</span> Javascript</a>
                     <div class="panel">
-                        <a><i class="fa fa-key"></i> La sélection</a>
-                        <a><i class="fa fa-key"></i> Les instructions conditionnelles</a>
-                        <a><i class="fa fa-key"></i> Les boucles</a>
-                        <a><i class="fa fa-key"></i> Jquery</a>
-                        <a><i class="fa fa-key"></i> AJAX</a>
-                        <a href="resolution_eq.html"><i class="fa fa-key"></i> Résolution d'equation à trois inconnues</a>
-                        <a href="../cycle_menstruel.html"><i class="fa fa-key"></i> Calcul de menstruation</a>
+                        <a href="#sommaire.html" data-scroll-nav="9"><i class="fa fa-circle"></i> La sélection</a>
+                        <a href="#sommaire.html" data-scroll-nav="10"><i class="fa fa-circle"></i> Les instructions conditionnelles</a>
+                        <a href="#sommaire.html" data-scroll-nav="11"><i class="fa fa-circle"></i> Les boucles</a>
+                        <a href="#sommaire.html" data-scroll-nav="12"><i class="fa fa-circle"></i> Jquery</a>
+                        <a href="#sommaire.html" data-scroll-nav="13"><i class="fa fa-circle"></i> AJAX</a>
                     </div>
             </div>
 
