@@ -74,3 +74,244 @@ input{
         color: #666;
         width: 40%;
 }
+
+@media screen and (max-width : 1200px){
+        
+        h1{
+                color: rgb(12, 11, 11);
+                text-align: center;
+                font-weight: bold;
+        }
+        #titre{
+
+                background-image: linear-gradient(to right, #950dd4, #da3cb7);
+                border-radius: 5px;
+                height: 70px;
+                padding-top: 10px;
+        }
+        
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 7%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:0%;
+                margin-left: 0%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+        
+}
+
+@media screen and (max-width : 1000px){
+        body{
+                padding-top: 3%;
+                padding-left: 10%;
+                padding-right: 1%;
+        }
+        h1{
+                color: rgb(12, 11, 11);
+                text-align: center;
+                font-weight: bold;
+        }
+        #titre{
+
+                background-image: linear-gradient(to right, #80439c, #855d7c);
+                border-radius: 5px;
+                height: 70px;
+                width: 90%;
+                padding-top: 10px;
+        }
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 15%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 15%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
+@media screen and (max-width : 900px){
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 12%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 12%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
+@media screen and (max-width : 700px){
+        #titre{
+
+                background-image: linear-gradient(to right, #80439c, #855d7c);
+                border-radius: 5px;
+                height: 70px;
+                width: 95%;
+                padding-top: 10px; 
+                margin-left: -2%;
+        }
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 5%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 5%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
+@media screen and (max-width : 650px){
+        #titre{
+
+                background-image: linear-gradient(to right, #80439c, #855d7c);
+                border-radius: 5px;
+                height: 100px;
+                width: 95%;
+                padding-top: 4px; 
+                margin-left: -2%;
+        }
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 450px;
+                height: 400px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 5%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 450px;
+                height: 400px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 5%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
+@media screen and (max-width : 500px){
+        h1{
+                color: rgb(12, 11, 11);
+                text-align: center;
+                font-weight: bold;
+                font-size: 25px;
+        }
+        #env{
+                font-size: 12px;
+        }
+        .me{
+                width: 20%;
+                height: 10%;
+                padding-bottom: 30px;
+                padding-right: 70px;
+                
+        }
+        #titre{
+
+                background-image: linear-gradient(to right, #80439c, #855d7c);
+                border-radius: 5px;
+                height: 50px;
+                width: 95%;
+                padding-top: 8px; 
+                margin-left: -2%;
+        }
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 350px;
+                height: 350px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 6%;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 12px;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 350px;
+                height: 350px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 6%;
+                border-radius: 10px;
+                font-size: 12px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
