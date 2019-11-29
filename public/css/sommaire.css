@@ -56,9 +56,9 @@
 
 
 @keyframes backg {
-        0%{background-image: url("../images/backgrounds/eclipse.jpg")}
-        30%{background-image: url("../images/backgrounds/eclipse.jpg")}
-        100%{background-image: url("../images/backgrounds/blur.png")}
+        0%{background-image: url("../images/backgrounds/book.jpg")}
+        30%{background-image: url("../images/backgrounds/book.jpg")}
+        100%{background-image: url("../images/backgrounds/vue.jpg")}
 }
 .lanidng-page{
         animation-name: backg;
@@ -150,3 +150,8 @@ footer {
         padding: 40px 0;
         background-color: #030d11;
 }
+
+@media screen and (max-widht: 768px) {
+        
+}
+

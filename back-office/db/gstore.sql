@@ -1,6 +1,6 @@
 -- MariaDB dump 10.17  Distrib 10.4.8-MariaDB, for Linux (x86_64)
 --
--- Host: localhost    Database: GSTORE
+-- Host: localhost    Database: gstore
 -- ------------------------------------------------------
 -- Server version	10.4.8-MariaDB
 
@@ -28,6 +28,7 @@ CREATE TABLE `Game` (
   `couverture` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `categorie` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `gameplay` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `prix` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -38,7 +39,7 @@ CREATE TABLE `Game` (
 
 LOCK TABLES `Game` WRITE;
 /*!40000 ALTER TABLE `Game` DISABLE KEYS */;
-INSERT INTO `Game` VALUES (1,'Moto-cross 4','public/images/jeux/mt.jpg','Sport, Course','public/videos/moto.mp4'),(2,'Dark Soul 3','public/images/jeux/ds.jpg','Aventure','public/videos/ds.mp4'),(3,'PUBG Mobile','public/images/jeux/pubg.jpg','Action, Strategie','public/videos/pubg.mp4'),(4,'Modern Warfare 3','public/images/jeux/cod.jpg','Action','public/videos/cod.mp4'),(5,'PES 2019','public/images/jeux/pes.jpg','Sport','public/videos/pes.mp4'),(6,'Far Cry 5','public/images/jeux/far.jpg','Action','public/videos/farcry.mp4'),(7,'Blur','public/images/jeux/blur.png','Course','public/videos/blur.mp4'),(8,'GTA 5','public/images/jeux/gta.jpg','Action, Aventure','public/videos/gta.mp4'),(9,'Burnout 3','public/images/jeux/bur.jpg','Course','public/videos/burn.mp4'),(10,'NBA 2K20','public/images/jeux/nba.jpg','Sport','public/videos/nba.mp4'),(11,'Fortnite','public/images/jeux/for.jpg','Action, Strategie','public/videos/fortnite.mp4'),(12,'Euro Truck Simulator 2','public/images/jeux/euro.jpg','Simulation, Aventure','public/videos/euro.mp4');
+INSERT INTO `Game` VALUES (1,'Moto-cross 4','public/images/jeux/mt.jpg','Sport, Course','public/videos/moto.mp4',75000),(2,'Dark Soul 3','public/images/jeux/ds.jpg','Aventure','public/videos/ds.mp4',85000),(3,'PUBG Mobile','public/images/jeux/pubg.jpg','Action, Strategie','public/videos/pubg.mp4',70000),(4,'Modern Warfare 3','public/images/jeux/cod.jpg','Action','public/videos/cod.mp4',90000),(5,'PES 2019','public/images/jeux/pes.jpg','Sport','public/videos/pes.mp4',110000),(6,'Far Cry 5','public/images/jeux/far.jpg','Action','public/videos/farcry.mp4',95000),(7,'Blur','public/images/jeux/blur.png','Course','public/videos/blur.mp4',90000),(8,'GTA 5','public/images/jeux/gta.jpg','Action, Aventure','public/videos/gta.mp4',105000),(9,'Burnout 3','public/images/jeux/bur.jpg','Course','public/videos/burn.mp4',80000),(10,'NBA 2K20','public/images/jeux/nba.jpg','Sport','public/videos/nba.mp4',95000),(11,'Fortnite','public/images/jeux/for.jpg','Action, Strategie','public/videos/fortnite.mp4',70000),(12,'Euro Truck Simulator 2','public/images/jeux/euro.jpg','Simulation, Aventure','public/videos/euro.mp4',80000);
 /*!40000 ALTER TABLE `Game` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -59,7 +60,7 @@ CREATE TABLE `Membre` (
   `is_connected` tinyint(4) NOT NULL DEFAULT 0,
   `Admin` tinyint(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +69,7 @@ CREATE TABLE `Membre` (
 
 LOCK TABLES `Membre` WRITE;
 /*!40000 ALTER TABLE `Membre` DISABLE KEYS */;
-INSERT INTO `Membre` VALUES (9,'AAA','Aaaaa','aa@aaa.aa','0325398496','e93b4e3c464ffd51732fbd6ded717e9efda28aad',0,0),(10,'BAKARY','Gaetan Jonathan','gaetan@esti.mg','0325398496','7c222fb2927d828af22f592134e8932480637c0d',0,0);
+INSERT INTO `Membre` VALUES (9,'AAA','Aaaaa','aa@aaa.aa','0325398496','e93b4e3c464ffd51732fbd6ded717e9efda28aad',0,0),(10,'BAKARY','Gaetan Jonathan','gaetan@esti.mg','0325398496','7c222fb2927d828af22f592134e8932480637c0d',0,0),(11,'RAFA','Aina rafidison ','test@test.mg','0344578944','b480c074d6b75947c02681f31c90c668c46bf6b8',0,0);
 /*!40000 ALTER TABLE `Membre` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -81,4 +82,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-23 19:07:47
+-- Dump completed on 2019-11-02 17:00:35

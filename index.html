@@ -37,7 +37,7 @@
                                     <button class="btn-submit" onclick="search_game($('#zavatra').val())" type="button"><i class="fa fa-search"></i></button>
                                 </form>
                             </li>
-                            <li class="nav-item" role="presentation" onclick="openNav()" ><a class="nav-link" style="cursor: pointer"><i class="fa fa-bars"></i> Sommaire</a></li>
+                            <li class="nav-item" role="presentation" onclick="openNav()" ><a class="nav-link" style="cursor: pointer"><i class="fa fa-bars"></i> Menu</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#inscrire" data-toggle="modal"><i class="fa fa-pencil"></i> S'inscrire</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" data-scroll-nav="2"><i class="fa fa-envelope"></i> Contact</a></li>
                         </ul>
@@ -70,13 +70,14 @@
                                 <div class="card border-0"><a href="#"><img src="" alt="Card Image" class="card-img-top scale-on-hover"></a>
                                     <div class="card-body">
                                         <h6><a href="#"></a></h6>
-                                        <p id='cat' class="text-muted card-text"></p>
+                                        <p class="text-muted card-text"><span id="cat"></span><span class="esc" style="color: #fff !important;">e</span> <span class="price">20000Ar</span></p>
                                         <a class="playB btn btn-outline-primary " data-toggle="modal" role="button" href=""><i class="fa fa-play"></i></a>
                                         <a class="achatB btn btn-outline-success" data-toggle="modal" role="button" href="#"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-danger" role="button" href="#"><i class="fa fa-heart"></i></a>
+                                        <a class="btn btn-outline-danger coeurIcon" role="button" onclick="heartMe($(this).attr('id'))" ><i class="fa fa-heart"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            <div class=""></div>
                         </div>
                     </div>
                 </section>
@@ -125,7 +126,7 @@
                                         <div class="col-md-4 mb-50 icon-env">
                                             <div class="item"> <span class="icon et-envelope"></span>
                                                 <div class="cont">
-                                                    <p>f-society@gmail.com</p>
+                                                    <p>ambatoroka.fsociety@gmail.com</p>
                                                     <p class="pcontact">Email</p> 
                                                 </div>
                                             </div>
@@ -170,7 +171,7 @@
                                     <a href="https://github.com/RSI-Society"><i class="fa fa-github"></i></a>
                                 </div>
                                 <!-- Copyright -->
-                                <p style="color: #fff !important;">Copyright © 2019 by <a href="https://github.com/RSI-Society">RSI-Society</a></p>
+                                <p style="color: #fff !important;">Copyright © 2019 by <a href="https://github.com/F-Society">FoyerSociety</a></p>
                             </div>
                         </div>
                     </div>
@@ -182,7 +183,7 @@
                 <div class="modal-dialog modal-login">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" style="font-weight: bold;">Gameplay de Dark Soul 3</h4>
+                            <h4 class="modal-title" style="font-weight: bold;">Dark Soul 3</h4>
                             <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">×</button>
                         </div>
                         <div class="col-md-6 col-lg-4">
@@ -193,8 +194,9 @@
                                     </video>
                                     <h6>Dark Soul 3</h6>
                                     <p class="text-muted card-text">Action, Stratégie</p>
+                                    <p class="pricemodal"> 20000Ar</p>
                                     <a class="achatB btn btn-outline-success" role="button" data-toggle="modal" href="#"><i class="fa fa-shopping-cart"></i></a>
-                                    <a class="btn btn-outline-danger"  role="button" href="#"><i class="fa fa-heart"></i></a>
+                                    <a class="coeurIcon btn btn-outline-danger"  role="button" onclick="heartMe($(this).attr('id'))" ><i class="fa fa-heart"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -334,25 +336,9 @@
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" class="accordion"><i class="fa fa-html5"></i> HTML</a>
-                    <div class="panel">
-                        <a><i class="fa fa-key"></i> Label 1</a>
-                        <a><i class="fa fa-key"></i> Label 2</a>
-                        <a><i class="fa fa-key"></i> Label 3</a>
-                    </div>
-                <a href="#" class="accordion"><i class="fa fa-css3"></i> CSS</a>
-                    <div class="panel">
-                        <a><i class="fa fa-key"></i> Label 1</a>
-                        <a><i class="fa fa-key"></i> Label 2</a>
-                        <a><i class="fa fa-key"></i> Label 3</a>
-                    </div>
-                <a href="#" class="accordion"> <span style="font-weight: bold" class="fa fa-js">JS</span> Javascript</a>
-                    <div class="panel">
-                        <a href="view/resolution_eq.html"><i class="fa fa-key"></i> Résolution d'equation à trois inconnues</a>
-                        <a href="view/cycle_menstruel.html"><i class="fa fa-key"></i> Calcul de menstruation</a>
-                        <a><i class="fa fa-key"></i> Label 3</a>
-                        <a><i class="fa fa-key"></i> Label 4</a>
-                    </div>
+                <a href="view/sommaire.html" class="accordion acc" style="padding-bottom: 10% !important;"><i class="fa fa-bars bar"></i> Sommaire</a>
+                <a href="view/resolution.html" class="accordion acc" style="padding-bottom: 10% !important;"><i class="fa fa-bars bar"></i> Résolution d'équation</a>
+                <a href="view/cycle.html" class="accordion acc" style="padding-bottom: 10% !important;"><i class="fa fa-bars bar"></i> Calcul menstruel</a>
             </div>
 
 
@@ -364,6 +350,7 @@
             <script src="public/js/theme.js"></script>
             <script src="public/js/sidenav.js"></script>
 
+            <!-- Script de scroll-->
             <script src="public/js/scroll/scrollIt.min.js"></script>
             <script src="public/js/scroll/scripts.js"></script>
         

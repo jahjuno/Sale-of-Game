@@ -9,7 +9,7 @@
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
       }
       
       .sidenav a {
@@ -54,9 +54,9 @@
         transition: 0.4s;
       }
       
-      /*.accordion:hover {
+      .acc:hover {
         background-color: #091218;
-      }*/
+      }
       
       .panel {
         padding: 0 18px;
@@ -67,7 +67,7 @@
       }
 
       .fa-css3{
-        border:1.5px solid #fff  !important;
+        border:1px solid #fff  !important;
         padding: 15px;
         border-radius: 50px !important;
       }
@@ -77,7 +77,7 @@
       }
 
       .fa-js{
-        border:1.5px solid #fff  !important;
+        border:1px solid #fff  !important;
         padding: 16px 14px;
         border-radius: 50px !important;
       }
@@ -87,11 +87,21 @@
       }
 
       .fa-html5{
-        border:1.5px solid #fff  !important;
+        border:1px solid #fff  !important;
         padding: 15px 16px;
         border-radius: 50px !important;
       }
       .fa-html5:hover{
         background-color: #fff !important;
         color:#091218 !important;
+      }
+
+      .bar{
+        border-radius: 60px;
+        padding: 15px;
+        border: 1px solid #fff;
+      }
+      .bar:hover{
+        color: #10202a;
+        background-color: #fff;
       }

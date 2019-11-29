@@ -1,21 +1,23 @@
 body{
         padding-top: 2%;
         padding-left: 1%;
-        padding-right: 1%;
+        padding-right: 2%;
         background-image: url(../images/bgcycle);
         background-repeat: no-repeat;
         background-size: cover;
+        font-family: Nimbus, sans-serif;
 }
 
 h1{
-        color: rgb(22, 21, 22);
+        color: #fff;
         text-align: center;
+        font-weight: bold;
 }
 
 #titre{
 
-        background-image: linear-gradient(to right, #ff00ff, #4a4a4a);
-        border-radius: 10px;
+        background-image: linear-gradient(to right, #950dd4, #634a6b);
+        border-radius: 5px;
         height: 70px;
         padding-top: 10px;
 }
@@ -30,16 +32,24 @@ h1{
         margin-left: 7%;
         border-radius: 10px;
         text-align: center;
-        background-color: rgba(212, 0, 255, 0.5);
+        background-color: #d400ff80;
 }
 
 #lab_titre_one{
         text-align: center;
+        color: #fff;
+        padding-top: 3%;
+}
+.lab_titre_two{
+        color: #fff;
+}
+.two{
+        padding-top: 3%;
 }
 .me{
-
         width: 20%;
         height: 10%;
+        padding-bottom: 30px;
         
 }
 
@@ -56,3 +66,252 @@ h1{
         background-color: rgba(212, 0, 255, 0.5);
 }
 
+input{
+        border: none;
+        padding: 6px;
+        border-radius: 20px;
+        padding-left: 20px;
+        color: #666;
+        width: 40%;
+}
+
+@media screen and (max-width : 1200px){
+        
+        h1{
+                color: rgb(12, 11, 11);
+                text-align: center;
+                font-weight: bold;
+        }
+        #titre{
+
+                background-image: linear-gradient(to right, #950dd4, #da3cb7);
+                border-radius: 5px;
+                height: 70px;
+                padding-top: 10px;
+        }
+        
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 7%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:0%;
+                margin-left: 0%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+        
+}
+
+@media screen and (max-width : 1000px){
+        body{
+                padding-top: 3%;
+                padding-left: 10%;
+                padding-right: 1%;
+        }
+        h1{
+                color: rgb(12, 11, 11);
+                text-align: center;
+                font-weight: bold;
+        }
+        #titre{
+
+                background-image: linear-gradient(to right, #80439c, #855d7c);
+                border-radius: 5px;
+                height: 70px;
+                width: 90%;
+                padding-top: 10px;
+        }
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 15%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 15%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
+@media screen and (max-width : 900px){
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 12%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 12%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
+@media screen and (max-width : 700px){
+        #titre{
+
+                background-image: linear-gradient(to right, #80439c, #855d7c);
+                border-radius: 5px;
+                height: 70px;
+                width: 95%;
+                padding-top: 10px; 
+                margin-left: -2%;
+        }
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 5%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 500px;
+                height: 500px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 5%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
+@media screen and (max-width : 650px){
+        #titre{
+
+                background-image: linear-gradient(to right, #80439c, #855d7c);
+                border-radius: 5px;
+                height: 100px;
+                width: 95%;
+                padding-top: 4px; 
+                margin-left: -2%;
+        }
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 450px;
+                height: 400px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 5%;
+                border-radius: 10px;
+                text-align: center;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 450px;
+                height: 400px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 5%;
+                border-radius: 10px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
+@media screen and (max-width : 500px){
+        h1{
+                color: rgb(12, 11, 11);
+                text-align: center;
+                font-weight: bold;
+                font-size: 25px;
+        }
+        #env{
+                font-size: 12px;
+        }
+        .me{
+                width: 20%;
+                height: 10%;
+                padding-bottom: 30px;
+                padding-right: 70px;
+                
+        }
+        #titre{
+
+                background-image: linear-gradient(to right, #80439c, #855d7c);
+                border-radius: 5px;
+                height: 50px;
+                width: 95%;
+                padding-top: 8px; 
+                margin-left: -2%;
+        }
+        #duree_cycle{
+
+                background-color: #ff00ff;
+                width: 350px;
+                height: 350px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-left: 6%;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 12px;
+                background-color: #d400ff80;
+        }
+        #duree_cycleTwo{
+
+                text-align: center;
+                width: 350px;
+                height: 350px;
+                padding-top: 10%;
+                padding-left: 2%;
+                margin-top:5%;
+                margin-bottom: 5%;
+                margin-left: 6%;
+                border-radius: 10px;
+                font-size: 12px;
+                background-color: rgba(212, 0, 255, 0.5);
+        }
+}
